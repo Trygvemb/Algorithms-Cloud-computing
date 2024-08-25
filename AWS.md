@@ -4,7 +4,7 @@
 
 ---
 
-## Module 1: Introduction to AWS
+### 1: Introduction to AWS
 
 1. **Summarize the benefits of AWS.**
    - On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing.
@@ -17,7 +17,7 @@
 
 ---
 
-## Module 2: Compute in the Cloud
+### 2: Compute in the Cloud
 
 1. **Describe the benefits of Amazon EC2 at a basic level.**
     - Amazon Elastic Compute Cloud (Amazon EC2) provides secure, resizable compute  capacity in the cloud as Amazon EC2 instances.
@@ -61,7 +61,7 @@
 
 ---
 
-## Module 3: Infrastructure and Reliability
+### 3: Infrastructure and Reliability
 
 1.**Summarize the benefits of the AWS Global Infrastructure.**
     - AWS Global Infrastructure is the term used to explain how aws has set up there data center. It's spread out over multiple center in a region and spans multiple regions, so if one Data center losses power or a natural disaster where to happen the overall structure would still remain.
@@ -80,7 +80,7 @@
     - **AWS Elastic Beanstalk**, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
     - **AWS CloudFormation** you can treat your infrastructure as code. This means that you can build an environment by writing lines of code instead of using the AWS Management Console to individually provision resources.
 
-## Module 4: Networking
+### 4. Networking
 
 1. **Describe the basic concepts of networking.**
 
@@ -98,7 +98,7 @@
 
 8. **Describe the services customers use to interact with the AWS global network.**
 
-## Module 5: Storage and Databases
+### 5: Storage and Databases
 
 1. **Summarize the basic concept of storage and databases.**
 
@@ -116,7 +116,7 @@
 
 8. **Summarize various database services.**
 
-## Module 6: Security
+### 6: Security
 
 1. **Explain the benefits of the shared responsibility model.**
 
@@ -132,7 +132,7 @@
 
 7. **Explain additional AWS security services at a basic level.**
 
-## Module 7: Monitoring and Analytics
+### 7: Monitoring and Analytics
 
 1. **Summarize approaches to monitoring your AWS environment.**
 
@@ -142,7 +142,7 @@
 
 4. **Describe the benefits of AWS Trusted Advisor.**
 
-## Module 8: Pricing and Support
+### 8: Pricing and Support
 
 1. **Describe AWS pricing and support models.**
 
@@ -160,7 +160,7 @@
 
 8. **Describe the benefits of AWS Marketplace.**
 
-## Module 9: Migration and Innovation
+### 9: Migration and Innovation
 
 1. **Understand migration and innovation in the AWS Cloud.**
 
@@ -172,13 +172,13 @@
 
 5. **Summarize the broad scope of innovative solutions that AWS offers.**
 
-## Module 10: The cloud journey
+### 10: The cloud journey
 
 1. **Summarize the six pillars of the Well-Architected Framework.**
 
 2. **Explain the six benefits of cloud computing.**
 
-## Module 11: AWS Certified Cloud Practitioner
+### 11: AWS Certified Cloud Practitioner
 
 1. **Determine resources for preparing for the AWS Certified Cloud Practitioner exam.**
 
