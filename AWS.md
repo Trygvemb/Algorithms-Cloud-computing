@@ -1,7 +1,13 @@
-# AWS Cloud Practitioner Essentials
-
-#### [Home](index.md) - [Algorithms](Algorithms.md) - [Cloud Computing](CloudComputing.md) - [Projects](Projects.md)
-
+---
+title: "AWS Cloud Practitioner Essentials"
+header:
+    [Home](index.md) - [Algorithms](Algorithms.md) - [Cloud Computing](CloudComputing.md) - [Projects](Projects.md)
+date: 2022-01-13 17:30:00 -0700
+categories:
+  - Notes
+tags:
+  - Cloud Computing
+  - AWS
 ---
 
 ### 1: Introduction to AWS
