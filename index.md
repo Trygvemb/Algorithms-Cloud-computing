@@ -1,7 +1,5 @@
 # Introduktion
 
-#### [Home](index.md) - [Algorithms](Algorithms.md) - [Cloud Computing](CloudComputing.md) - [Projects](Projects.md)
-
 Velkommen til min portfolio, hvor jeg dokumenterer min læringsrejse og mine projekter som en del af min uddannelse i Computer Science og Softwareudvikling. Dette semester har jeg valgt to valgfag: **Algoritmer** og **Cloud Computing**. Ved siden af disse fag arbejder jeg også på et projekt for firmaet WePack sammen med mit team.
 
 # [Algoritmer](Algorithms.md)

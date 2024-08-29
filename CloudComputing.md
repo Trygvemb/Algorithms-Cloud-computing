@@ -1,8 +1,5 @@
 # Cloud Computing
 
-#### [Home](index.md) - [Algorithms](Algorithms.md) - [Cloud Computing](CloudComputing.md) - [Projects](Projects.md)
----
-
 ### [AWS Cloud Essential, Course notes](AWS.md)
 
 ##### Mine noter og læringsmål taget gennem AWS kurset er på engelsk.
