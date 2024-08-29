@@ -16,42 +16,40 @@
     {% include head-custom.html %}
   </head>
   <body>
+  <header>
+    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+  </header>
 
-      <header>
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-      </header>
+  <div id="banner">
+    <span id="logo"></span>
 
-      <div id="banner">
-        <span id="logo"></span>
+    <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+    {% if site.show_pages %}
+      <div class="downloads">
+        <span>Pages:</span>
+        <ul>
+          <li><a href="{{ '/Home.html' | relative_url }}" class="button">Home</a></li>
+          <li><a href="{{ '/Algorithms.html' | relative_url }}" class="button">Algorithms</a></li>
+          <li><a href="{{ '/CloudComputing.html' | relative_url }}" class="button">Cloud Computing</a></li>
+          <li><a href="{{ '/Project.html' | relative_url }}" class="button">Project</a></li>
+        </ul>
+      </div>
+    {% endif %}
+  </div><!-- end banner -->
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
-        {% if site.show_pages %}
-          <div class="downloads">
-            <span>Pages:</span>
-            <ul>
-              <li><a href="{{ Home.md }}" class="button">Home</a></li>
-              <li><a href="{{ Algorithms.md }}" class="button">Algorithms</a></li>
-              <li><a href="{{ site.github.tar_url }}" class="button">Cloud Computing</a></li>
-              <li><a href="{{ site.github.tar_url }}" class="button">Project</a></li>
-            </ul>
-          </div>
-        {% endif %}
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        {{ content }}
-
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-          <p>Project by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-      </footer>
-    </div>
-  </body>
+  <div class="wrapper">
+    <nav>
+      <ul></ul>
+    </nav>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      {% if site.github.is_project_page %}
+        <p>Project by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      {% endif %}
+    </footer>
+  </div>
+</body>
 </html>
