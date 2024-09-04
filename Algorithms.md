@@ -1,6 +1,6 @@
 # Algorithms
 
-##### [Notes](AlgorithmsNotes.md)
+## [Notes](AlgorithmsNotes.md)
 
 ### Litteraturliste
 
