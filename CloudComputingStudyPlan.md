@@ -1,7 +1,6 @@
 ---
-title: "Study Plan: Cloud Computing"
+title: "Study Plan for Cloud Computing"
 ---
-### **Cloud Computing Study Plan**
 
 #### **1. Cloud Computing Basics**
 

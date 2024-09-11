@@ -2,11 +2,11 @@
 Title: "Algorithms"
 ---
 
-## [Notes](AlgorithmsNotes.md)
+## Resources
 
-## [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
-
-## [Github Project for practicing Algorithms](https://github.com/Trygvemb/Algorithms)
+- [Algorithms Notes](AlgorithmsNotes.md)
+- [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
+- [GitHub Project for Practicing Algorithms](https://github.com/Trygvemb/Algorithms)
 
 ### Reading List
 
