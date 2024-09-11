@@ -4,6 +4,8 @@ title : "Cloud Computing"
 
 ### [Study Plan for Cloud Computing](CloudComputingStudyPlan.md)
 
+### [Github Project for practicing Cloud Computing](https://github.com/Trygvemb/CloudPractice)
+
 ### [AWS Cloud Essential, Course notes](AWS.md)
 
 #### My notes and learning objectives taken from the AWS course are in English.
