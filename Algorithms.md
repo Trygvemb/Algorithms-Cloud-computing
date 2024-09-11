@@ -4,7 +4,7 @@ Title: "Algorithms"
 
 ## [Notes](AlgorithmsNotes.md)
 
-## [Study Plan](StudyPlan.md)
+## [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
 
 ### Reading List
 
