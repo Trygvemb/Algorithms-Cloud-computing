@@ -61,7 +61,7 @@ a small {
 }
 
 ul {
-  list-style-image:url('../images/bullet-dark.png'); /* Dark-themed bullet */
+  list-style-image:url('../assets/images/bullet.png'); /* Dark-themed bullet */
 }
 
 strong {
@@ -153,7 +153,7 @@ hr {
   border: 0;
   outline: none;
   height: 11px;
-  background: transparent url('../images/hr-dark.gif') center center repeat-x;
+  background: transparent url('../assets/images/hr.gif') center center repeat-x;
   margin: 0 0 20px;
 }
 
