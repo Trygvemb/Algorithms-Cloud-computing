@@ -1,12 +1,14 @@
-# Cloud Computing
+---
+title : "Cloud Computing"
+---
 
 ### [AWS Cloud Essential, Course notes](AWS.md)
 
-##### Mine noter og læringsmål taget gennem AWS kurset er på engelsk.
+#### My notes and learning objectives taken from the AWS course are in English.
+
 ---
 
-
-### Litteraturliste
+### Reading List
 
 - **[AWS]**: *AWS Certified Solutions Architect - Study Guide*
 - **[CC]**: *Cloud Computing - From Theory to Practice*
@@ -14,61 +16,61 @@
 
 ---
 
-#### Læringsmål for Cloud Computing
+#### Learning Objectives for Cloud Computing
 
-##### Beskrivelse af emne
+##### Subject Description
 
-Cloud Computing dækker over konceptet med at levere forskellige tjenester over internettet, som inkluderer datalagring, servere, databaser, netværk, software osv. Jeg har valgt dette emne, da det er en kernekompetence i moderne softwareudvikling og giver mulighed for at arbejde med skalerbare og fleksible systemer. Desuden er det et område, der er relevant for mange jobmuligheder, især i relation til cloud-platforme som AWS.
+Cloud Computing refers to the concept of delivering various services over the internet, which include data storage, servers, databases, networking, software, etc. I have chosen this subject because it is a core competency in modern software development and allows for working with scalable and flexible systems. Additionally, it is an area that is relevant to many job opportunities, particularly in relation to cloud platforms such as AWS.
 
-##### Formulering af læringsmål
+##### Formulation of Learning Objectives
 
-###### Langsigtede læringsmål
+###### Long-Term Learning Objectives
 
-**Viden**
+**Knowledge**
 
-- Forståelse af grundlæggende begreber og terminologier inden for Cloud Computing.
-- Forståelse af de forskellige typer af Cloud Services (IaaS, PaaS, SaaS) og deres anvendelser.
-- Forståelse af hvordan cloud-tjenester kan bruges til at skabe skalerbare applikationer.
-- Forståelse af sikkerhedsaspekter i cloud-miljøer.
+- Understanding the fundamental concepts and terminology in Cloud Computing.
+- Understanding the different types of Cloud Services (IaaS, PaaS, SaaS) and their applications.
+- Understanding how cloud services can be used to create scalable applications.
+- Understanding the security aspects of cloud environments.
 
-**Færdigheder**
+**Skills**
 
-- Konfigurere og administrere cloud-tjenester ved brug af AWS.
-- Designe og implementere skalerbare systemer i cloud-miljøer.
-- Implementere sikkerhedsforanstaltninger for at beskytte data og applikationer i skyen.
-- Anvende cloud-baserede værktøjer til monitorering og fejlfinding af systemer.
+- Configure and manage cloud services using AWS.
+- Design and implement scalable systems in cloud environments.
+- Implement security measures to protect data and applications in the cloud.
+- Use cloud-based tools to monitor and troubleshoot systems.
 
-**Kompetencer**
+**Competencies**
 
-- Identificere krav til cloud-løsninger og designe en passende arkitektur.
-- Evaluere og vælge passende cloud-tjenester baseret på behov.
-- Tilegne sig ny viden om avancerede cloud-tjenester og teknologier.
-- Integrere cloud-løsninger i eksisterende IT-infrastrukturer.
+- Identify requirements for cloud solutions and design an appropriate architecture.
+- Evaluate and choose suitable cloud services based on needs.
+- Acquire new knowledge of advanced cloud services and technologies.
+- Integrate cloud solutions into existing IT infrastructures.
 
-###### Kortsigtede læringsmål
+###### Short-Term Learning Objectives
 
-- Gennemføre et online kursus i AWS Certified Solutions Architect.
-- Læse og forstå AWS whitepapers om sikkerhed og bedste praksis.
-- Implementere en simpel applikation ved brug af AWS cloud-tjenester (f.eks. S3, EC2, RDS).
-- Øve mig i at designe cloud-arkitekturer gennem praktiske øvelser og mock exams.
-
----
-
-#### Kvalitetskriterier
-
-##### Identifikation af kvalitetskriterier
-
-- **Klarhed**: Tydelig definition af cloud computing koncepter og læringsmål.
-- **Målbarhed**: Bestemte certifikater og projekter skal gennemføres og dokumenteres.
-- **Tidsramme**: En klar tidsplan for færdiggørelse af kurser og øvelser.
-- **Mulighed for feedback**: Regelmæssig vurdering af fremdrift gennem praksis og eksamener.
-
-##### Anvendelse af kriterier
-
-Kvalitetskriterierne bruges som retningslinjer for at sikre, at læringsmålene er realistiske, klare og opnåelige, og at der er en tydelig sammenhæng mellem de kortsigtede mål og de overordnede læringsmål.
+- Complete an online course in AWS Certified Solutions Architect.
+- Read and understand AWS whitepapers on security and best practices.
+- Implement a simple application using AWS cloud services (e.g., S3, EC2, RDS).
+- Practice designing cloud architectures through hands-on exercises and mock exams.
 
 ---
 
-#### Formidling
+#### Quality Criteria
 
-De kortsigtede mål understøtter de langsigtede mål ved at gøre dem konkrete og handlekraftige. For eksempel bliver de langsigtede læringsmål om "Forståelse af grundlæggende begreber og terminologier inden for Cloud Computing" og "Konfigurere og administrere cloud-tjenester ved brug af AWS" omsat til konkrete læringsaktiviteter som kurser, læsning af whitepapers, og praktiske øvelser.
+##### Identification of Quality Criteria
+
+- **Clarity**: Clear definition of cloud computing concepts and learning objectives.
+- **Measurability**: Specific certifications and projects should be completed and documented.
+- **Timeframe**: A clear schedule for the completion of courses and exercises.
+- **Opportunity for Feedback**: Regular assessment of progress through practical exercises and exams.
+
+##### Application of Criteria
+
+The quality criteria serve as guidelines to ensure that the learning objectives are realistic, clear, and achievable, and that there is a clear connection between the short-term goals and the overall learning objectives.
+
+---
+
+#### Communication
+
+The short-term goals support the long-term goals by making them concrete and actionable. For example, the long-term learning objectives of "Understanding fundamental concepts and terminology in Cloud Computing" and "Configuring and managing cloud services using AWS" are translated into specific learning activities such as courses, reading whitepapers, and practical exercises.

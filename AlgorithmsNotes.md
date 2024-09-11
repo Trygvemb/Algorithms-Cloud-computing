@@ -1,4 +1,6 @@
-# Notes
+---
+title: "Algorithms Notes"
+---
 
 ## Steps for learning algorithms
 

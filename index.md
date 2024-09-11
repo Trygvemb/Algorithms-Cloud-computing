@@ -1,55 +1,57 @@
-# Introduktion
+---
+title : "Introduction"
+---
 
-Velkommen til min portfolio, hvor jeg dokumenterer min læringsrejse og mine projekter som en del af min uddannelse i Computer Science og Softwareudvikling. Dette semester har jeg valgt to valgfag: **Algoritmer** og **Cloud Computing**. Ved siden af disse fag arbejder jeg også på et projekt for firmaet WePack sammen med mit team.
+Welcome to my portfolio, where I document my learning journey and projects as part of my Computer Science and Software Development education. This semester, I have chosen two elective courses: **Algorithms** and **Cloud Computing**. Alongside these subjects, I am also working on a project for the company WePack with my team.
 
-# [Algoritmer](Algorithms.md)
+# [Algorithms](Algorithms.md)
 
-**Hvorfor Jeg Valgte Algoritmer**
+**Why I Chose Algorithms**
 
-Algoritmer er kernen i problemløsning inden for datalogi. De udgør fundamentet for effektiv programmering og er essentielle for at udvikle løsninger, der kan skalere og præstere godt. Jeg har valgt Algoritmer, fordi det at mestre dette fag vil forbedre min evne til at designe og implementere robuste softwareløsninger, hvilket er afgørende inden for backend-udvikling og systemdesign.
+Algorithms are the core of problem-solving in computer science. They form the foundation of efficient programming and are essential for developing solutions that can scale and perform well. I chose Algorithms because mastering this subject will enhance my ability to design and implement robust software solutions, which is crucial in backend development and system design.
 
 # [Cloud Computing](CloudComputing.md)
 
-**Hvorfor Jeg Valgte Cloud Computing**
+**Why I Chose Cloud Computing**
 
-Cloud computing revolutionerer, hvordan virksomheder opererer ved at tilbyde skalerbare, on-demand ressourcer. Med den stigende anvendelse af cloud-tjenester som AWS, bliver det stadig vigtigere at forstå cloud-arkitektur og -tjenester. Jeg har valgt Cloud Computing for at opnå praktiske færdigheder i at implementere, administrere og optimere cloud-baserede systemer, som er afgørende i nutidens tech-industri.
+Cloud computing is revolutionizing how businesses operate by offering scalable, on-demand resources. With the increasing use of cloud services like AWS, it is becoming more important to understand cloud architecture and services. I chose Cloud Computing to gain practical skills in implementing, managing, and optimizing cloud-based systems, which are critical in today's tech industry.
 
-**Hvordan Algoritmer og Cloud Computing Passer Sammen**
+**How Algorithms and Cloud Computing Fit Together**
 
-Forståelse af algoritmer er afgørende, når man arbejder med store systemer, især i en cloud-miljø. Effektive algoritmer reducerer den nødvendige beregningskraft og sikrer, at cloud-baserede applikationer kan håndtere store mængder data uden at gå på kompromis med ydeevnen.
-
----
-# [Projekt](Projects.md)
-
-## Teamprojekt - WePack.PMS
-
-### Projektoversigt
-
-WePack er et firma, der driver flere webshops, såsom Lux-Case.dk og Urrem.dk, i forskellige lande og på forskellige sprog. Virksomheden står over for udfordringer med at administrere deres produktdatabase på tværs af platforme som Shopify og Magento, hvilket resulterer i dobbeltarbejde, når produkter skal uploades, opdateres eller slettes.
-
-**Problemstilling**
-
-WePack har brug for et samlet system til at administrere deres produktdatabase, som i øjeblikket omfatter omkring 180.000 unikke varer. Dette system skal integreres med Shopify's GraphQL og Magento's REST API'er for at strømline produktstyringen på tværs af alle platforme fra ét enkelt interface.
-
-**Foreslået Løsning**
-
-Vores team udvikler et centraliseret produktstyringssystem, kaldet **WePack.PMS**, der vil:
-
-- Konsolidere produktdata i ét samlet system.
-- Integrere med Shopify og Magento for effektiv produktstyring.
-- Implementere AI-drevne løsninger til automatisk oversættelse af produktbeskrivelser, så de passer til det sprog, der anvendes på de forskellige webshops.
-- Håndtere store datamængder og være skalerbart til fremtidig vækst.
-- Sikre brugervenlige og intuitive interfaces for nem anvendelse.
-
-### Teammedlemmer & Roller
-
-- **Kasper**: Product Owner (PO) med dybdegående viden om WePack’s systemer og krav samt Fokuserer på backend-arkitektur.
-- **Trygve**: Sikrer et stabilt og velfungerende system ved at udnytte ekspertise inden for Cloud Computing og Algoritmer.
-- **Adam**: Specialiserer sig i frontend-udvikling med fokus på UI/UX for at skabe en intuitiv brugeroplevelse ved hjælp af React.
+Understanding algorithms is vital when working with large systems, especially in a cloud environment. Efficient algorithms reduce the required computational power and ensure that cloud-based applications can handle large amounts of data without compromising performance.
 
 ---
 
-## Konklusion
+# [Project](Projects.md)
 
-Denne portfolio viser min fremgang i at mestre Algoritmer og Cloud Computing, samtidig med at jeg anvender disse færdigheder i virkelige projekter. Gennem denne kombination stræber jeg efter at bygge skalerbare, effektive og brugervenlige systemer, der løser reelle forretningsudfordringer.
+## Team Project - WePack.PMS
 
+### Project Overview
+
+WePack is a company that operates multiple webshops, such as Lux-Case.dk and Urrem.dk, in different countries and languages. The company faces challenges in managing their product database across platforms like Shopify and Magento, resulting in duplicated work when products need to be uploaded, updated, or deleted.
+
+**Problem Statement**
+
+WePack needs a unified system to manage their product database, which currently contains about 180,000 unique items. This system must integrate with Shopify’s GraphQL and Magento’s REST APIs to streamline product management across all platforms from a single interface.
+
+**Proposed Solution**
+
+Our team is developing a centralized product management system called **WePack.PMS** that will:
+
+- Consolidate product data into a unified system.
+- Integrate with Shopify and Magento for efficient product management.
+- Implement AI-driven solutions for automatic translation of product descriptions to match the languages used on different webshops.
+- Handle large amounts of data and be scalable for future growth.
+- Ensure user-friendly and intuitive interfaces for easy use.
+
+### Team Members & Roles
+
+- **Kasper**: Product Owner (PO) with in-depth knowledge of WePack’s systems and requirements, focusing on backend architecture.
+- **Trygve**: Ensures a stable and functional system by leveraging expertise in Cloud Computing and Algorithms.
+- **Adam**: Specializes in frontend development with a focus on UI/UX, creating an intuitive user experience using React.
+
+---
+
+## Conclusion
+
+This portfolio showcases my progress in mastering Algorithms and Cloud Computing while applying these skills in real-world projects. Through this combination, I strive to build scalable, efficient, and user-friendly systems that address real business challenges.

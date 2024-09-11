@@ -1,67 +1,71 @@
-# Algorithms
+---
+Title: "Algorithms"
+---
 
 ## [Notes](AlgorithmsNotes.md)
 
-### Litteraturliste
+## [Study Plan](StudyPlan.md)
+
+### Reading List
 
 - **[CLRS]**: *Introduction to Algorithms (Fourth Edition)*
 
 ---
 
-#### Læringsmål for Algoritmer
+#### Learning Objectives for Algorithms
 
-##### Beskrivelse af emne
+##### Subject Description
 
-Algoritmer er fundamentale byggesten i computer science, som bruges til at løse komplekse problemstillinger effektivt. Ved at lære om algoritmer, opnår man ikke blot viden om specifikke teknikker og datastrukturer, men også en generel tilgang til problemløsning, som kan anvendes i mange forskellige situationer. Jeg har valgt dette emne, fordi det er afgørende at kunne designe og implementere effektive løsninger på reelle problemer, og fordi forståelsen af algoritmer ofte er nøglen til at skrive hurtigere og mere effektive programmer. Derudover er det et centralt emne i tekniske jobinterviews og relevant for mange professionelle udvikleropgaver.
+Algorithms are fundamental building blocks in computer science, used to solve complex problems efficiently. By learning about algorithms, one not only gains knowledge of specific techniques and data structures but also develops a general approach to problem-solving that can be applied in various situations. I have chosen this subject because it is crucial to be able to design and implement effective solutions to real-world problems, and understanding algorithms is often the key to writing faster and more efficient programs. Additionally, algorithms are a central topic in technical job interviews and are relevant for many professional development tasks.
 
-##### Formulering af læringsmål
+##### Formulation of Learning Objectives
 
-###### Langsigtede læringsmål
+###### Long-Term Learning Objectives
 
-**Viden**
+**Knowledge**
 
-- Forståelse af teorien bag grundlæggende og ofte anvendte algoritmer.
-- Forståelse af tids- og rumkompleksitet (Big-O notation) og hvordan det påvirker ydeevnen af algoritmer.
-- Forståelse af datastrukturer og deres anvendelser i algoritmer.
-- Forståelse af korrekthed og effektivitet i designet af algoritmer.
+- Understanding the theory behind basic and commonly used algorithms.
+- Understanding time and space complexity (Big-O notation) and how it affects the performance of algorithms.
+- Understanding data structures and their applications in algorithms.
+- Understanding the correctness and efficiency in the design of algorithms.
 
-**Færdigheder**
+**Skills**
 
-- Anvende og implementere forskellige algoritmer til løsning af konkrete problemstillinger.
-- Implementere algoritmer i C# og analysere deres kompleksitet.
-- Vælge og anvende den mest hensigtsmæssige datastruktur til en given problemstilling.
-- Bruge værktøjer til at analysere og optimere algoritmers præstation.
+- Apply and implement various algorithms to solve specific problems.
+- Implement algorithms in C# and analyze their complexity.
+- Choose and apply the most appropriate data structure for a given problem.
+- Use tools to analyze and optimize the performance of algorithms.
 
-**Kompetencer**
+**Competencies**
 
-- Identificere, analysere og definere problemstillinger der kan løses ved hjælp af algoritmer.
-- Evaluere og vælge den mest passende algoritme til at løse en given problemstilling.
-- Lære og anvende nye algoritmer og datastrukturer, når det kræves af komplekse opgaver.
+- Identify, analyze, and define problems that can be solved using algorithms.
+- Evaluate and choose the most suitable algorithm to solve a given problem.
+- Learn and apply new algorithms and data structures when required by complex tasks.
 
-###### Kortsigtede læringsmål
+###### Short-Term Learning Objectives
 
-- Læse og forstå det første kapitel i *Introduction to Algorithms (CLRS)* og udføre alle øvelserne.
-- Implementere de algoritmer, der introduceres i kapitlet, i små C#-applikationer.
-- Udvikle en forståelse for algoritmers tids- og rumkompleksitet ved at analysere deres præstation gennem praksis.
-- Øve mig i at identificere passende algoritmer og datastrukturer til simple opgaver og implementere dem effektivt.
-
----
-
-#### Kvalitetskriterier
-
-##### Identifikation af kvalitetskriterier
-
-- **Klarhed**: Det skal være tydeligt, hvad der forventes opnået inden for hver læringsaktivitet.
-- **Målbarhed**: Forståelse og implementering af specifikke algoritmer skal kunne dokumenteres gennem kode og analyser.
-- **Tidsramme**: Hvert mål skal have en klart defineret deadline for færdiggørelse.
-- **Mulighed for feedback**: Regelmæssig gennemgang og evaluering af fremdrift med mulighed for tilpasning af læringsmål efter behov.
-
-##### Anvendelse af kriterier
-
-Disse kriterier anvendes som en målestok for at sikre, at læringsmålene er realistiske, konkrete og rettet mod praktisk anvendelse og forståelse.
+- Read and understand the first chapter of *Introduction to Algorithms (CLRS)* and complete all exercises.
+- Implement the algorithms introduced in the chapter in small C# applications.
+- Develop an understanding of the time and space complexity of algorithms by analyzing their performance through practice.
+- Practice identifying appropriate algorithms and data structures for simple tasks and implement them effectively.
 
 ---
 
-#### Formidling
+#### Quality Criteria
 
-De kortsigtede mål understøtter de langsigtede mål ved at gøre dem konkrete gennem læsning, øvelser og praktiske implementeringer. For eksempel er de langsigtede mål om "Forståelse af teorien bag grundlæggende algoritmer" og "Anvende og implementere forskellige algoritmer" omsat til konkrete opgaver som at udføre øvelser fra bogen og implementere algoritmer i små programmer.
+##### Identification of Quality Criteria
+
+- **Clarity**: It must be clear what is expected to be achieved within each learning activity.
+- **Measurability**: Understanding and implementation of specific algorithms should be documented through code and analysis.
+- **Timeframe**: Each goal should have a clearly defined deadline for completion.
+- **Opportunity for Feedback**: Regular reviews and evaluations of progress with the possibility of adjusting learning objectives as needed.
+
+##### Application of Criteria
+
+These criteria are used as benchmarks to ensure that the learning objectives are realistic, concrete, and aimed at practical application and understanding.
+
+---
+
+#### Communication
+
+The short-term goals support the long-term goals by making them concrete through reading, exercises, and practical implementations. For example, the long-term goals of "Understanding the theory behind basic algorithms" and "Applying and implementing various algorithms" are translated into specific tasks such as completing exercises from the book and implementing algorithms in small programs.
