@@ -4,13 +4,13 @@ Title: "Algorithms"
 
 ## Resources
 
-- [Algorithms Notes](AlgorithmsNotes.md)
-- [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
-- [GitHub Project for Practicing Algorithms](https://github.com/Trygvemb/Algorithms)
+-   [Algorithms Notes](AlgorithmsNotes.md)
+-   [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
+-   [GitHub Project for Practicing Algorithms](https://github.com/Trygvemb/AlgorithmPractice)
 
 ### Reading List
 
-- **[CLRS]**: *Introduction to Algorithms (Fourth Edition)*
+-   **[CLRS]**: _Introduction to Algorithms (Fourth Edition)_
 
 ---
 
@@ -26,30 +26,30 @@ Algorithms are fundamental building blocks in computer science, used to solve co
 
 **Knowledge**
 
-- Understanding the theory behind basic and commonly used algorithms.
-- Understanding time and space complexity (Big-O notation) and how it affects the performance of algorithms.
-- Understanding data structures and their applications in algorithms.
-- Understanding the correctness and efficiency in the design of algorithms.
+-   Understanding the theory behind basic and commonly used algorithms.
+-   Understanding time and space complexity (Big-O notation) and how it affects the performance of algorithms.
+-   Understanding data structures and their applications in algorithms.
+-   Understanding the correctness and efficiency in the design of algorithms.
 
 **Skills**
 
-- Apply and implement various algorithms to solve specific problems.
-- Implement algorithms in C# and analyze their complexity.
-- Choose and apply the most appropriate data structure for a given problem.
-- Use tools to analyze and optimize the performance of algorithms.
+-   Apply and implement various algorithms to solve specific problems.
+-   Implement algorithms in C# and analyze their complexity.
+-   Choose and apply the most appropriate data structure for a given problem.
+-   Use tools to analyze and optimize the performance of algorithms.
 
 **Competencies**
 
-- Identify, analyze, and define problems that can be solved using algorithms.
-- Evaluate and choose the most suitable algorithm to solve a given problem.
-- Learn and apply new algorithms and data structures when required by complex tasks.
+-   Identify, analyze, and define problems that can be solved using algorithms.
+-   Evaluate and choose the most suitable algorithm to solve a given problem.
+-   Learn and apply new algorithms and data structures when required by complex tasks.
 
 ###### Short-Term Learning Objectives
 
-- Read and understand the first chapter of *Introduction to Algorithms (CLRS)* and complete all exercises.
-- Implement the algorithms introduced in the chapter in small C# applications.
-- Develop an understanding of the time and space complexity of algorithms by analyzing their performance through practice.
-- Practice identifying appropriate algorithms and data structures for simple tasks and implement them effectively.
+-   Read and understand the first chapter of _Introduction to Algorithms (CLRS)_ and complete all exercises.
+-   Implement the algorithms introduced in the chapter in small C# applications.
+-   Develop an understanding of the time and space complexity of algorithms by analyzing their performance through practice.
+-   Practice identifying appropriate algorithms and data structures for simple tasks and implement them effectively.
 
 ---
 
@@ -57,10 +57,10 @@ Algorithms are fundamental building blocks in computer science, used to solve co
 
 ##### Identification of Quality Criteria
 
-- **Clarity**: It must be clear what is expected to be achieved within each learning activity.
-- **Measurability**: Understanding and implementation of specific algorithms should be documented through code and analysis.
-- **Timeframe**: Each goal should have a clearly defined deadline for completion.
-- **Opportunity for Feedback**: Regular reviews and evaluations of progress with the possibility of adjusting learning objectives as needed.
+-   **Clarity**: It must be clear what is expected to be achieved within each learning activity.
+-   **Measurability**: Understanding and implementation of specific algorithms should be documented through code and analysis.
+-   **Timeframe**: Each goal should have a clearly defined deadline for completion.
+-   **Opportunity for Feedback**: Regular reviews and evaluations of progress with the possibility of adjusting learning objectives as needed.
 
 ##### Application of Criteria
 
