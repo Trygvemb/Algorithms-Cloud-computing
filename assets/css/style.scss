@@ -292,11 +292,12 @@ header {
 }
 
 section {
-  width:590px;
+  width: 90%;
+  max-width: 700px;
   padding: 30px 30px 50px 30px;
-  margin: 20px 0;
+  margin: 20px auto;
   margin-top: 190px;
-  position:relative;
+  position: relative;
   background: #2e2e2e;
   border-radius: 3px;
   border: 1px solid #444;
