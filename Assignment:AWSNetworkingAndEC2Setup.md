@@ -1,3 +1,7 @@
+Here is the revised version of the assignment with the addition of **How to Set Up HTTPS on Your EC2 Instance** after Part 2:
+
+---
+
 # **Assignment: Basic AWS Networking and EC2 Setup**
 
 ## **Use Case:**
@@ -48,7 +52,7 @@ By completing this assignment, you'll learn how to:
 
 1. **Launch an EC2 Instance:**
    - Go to **EC2** in the AWS Management Console and click **Launch Instance**.
-   - Choose an Amazon Machine Image (AMI), such as Amazon Linux 2 or Ubuntu.
+   - Choose Linux Amazon Machine Image (AMI).
    - Choose **t2.micro** for a free-tier eligible instance type.
    - In **Configure Instance**, select the **public subnet** and enable the auto-assign public IP option.
    - In **Security Groups**, create a new security group and allow **SSH (port 22)** and **HTTP (port 80)** traffic.
@@ -61,6 +65,8 @@ By completing this assignment, you'll learn how to:
      ssh -i "your-key.pem" ec2-user@your-ec2-public-ip
      ```
 
+     Example: `ssh -i ~/Downloads/MyEC2Key.pem ec2-user@3.123.456.789`
+
    - Install a web server (e.g., Apache):
 
      ```bash
@@ -70,7 +76,68 @@ By completing this assignment, you'll learn how to:
      ```
 
 3. **Verify EC2 Setup:**
-   - Access the public IP of your EC2 instance in a browser. You should see the Apache default page.
+   - Access the public IP of your EC2 instance with HTTP in a browser. You should see the Apache default page.
+   - Example: `http://your-ec2-public-ip`
+
+---
+
+#### **Part 2.5: Set Up HTTPS on Your EC2 Instance**
+
+Now that you have HTTP set up and running, let's configure **HTTPS** (secure HTTP):
+
+1. **Install `mod_ssl` for Apache**:
+   This is required to enable SSL/TLS in Apache.
+
+   ```bash
+   sudo yum install -y mod_ssl
+   ```
+
+2. **Generate a Self-Signed SSL Certificate** (For testing purposes):
+   - Run the following command to generate a self-signed SSL certificate:
+
+     ```bash
+     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/pki/tls/private/selfsigned.key -out /etc/pki/tls/certs/selfsigned.crt
+     ```
+
+   - When prompted, fill in details such as country, state, organization, etc.
+
+3. **Configure Apache for SSL**:
+   Edit the Apache SSL configuration file:
+
+   ```bash
+   sudo nano /etc/httpd/conf.d/ssl.conf
+   ```
+
+   - Look for the following directives and set them to point to your self-signed certificate and key:
+
+     ```
+     SSLCertificateFile /etc/pki/tls/certs/selfsigned.crt
+     SSLCertificateKeyFile /etc/pki/tls/private/selfsigned.key
+     ```
+
+4. **Update Firewall (Security Groups)**:
+   Ensure that your **security group** allows inbound traffic on port **443** for HTTPS.
+
+   - In the AWS Console, go to **EC2 > Instances > Security Groups** and add a new inbound rule for HTTPS:
+     - **Type**: HTTPS
+     - **Port**: 443
+     - **Source**: `0.0.0.0/0` (for access from anywhere).
+
+5. **Restart Apache**:
+   After configuring SSL, restart Apache to apply the changes:
+
+   ```bash
+   sudo systemctl restart httpd
+   ```
+
+6. **Test HTTPS**:
+   - Now, try accessing your EC2 instance with **HTTPS**:
+
+     ```
+     https://your-ec2-public-ip
+     ```
+
+     Since this is a self-signed certificate, your browser will likely show a warning indicating that the certificate is not trusted. You can bypass this by clicking "Advanced" and proceeding to the site.
 
 ---
 
@@ -111,6 +178,7 @@ By completing this assignment, you'll learn how to:
 
 - **Part 1**: You’ll set up basic networking using a VPC with subnets, route tables, and a NAT gateway.
 - **Part 2**: You’ll launch a secure EC2 instance, install a web server, and confirm it's reachable via the internet.
+- **Part 2.5**: You’ll set up HTTPS on your EC2 instance using a self-signed SSL certificate.
 - **Part 3**: You'll configure an Elastic Load Balancer and Auto Scaling for better traffic handling and reliability.
 - **Part 4**: You'll configure DNS using Route 53 to route traffic to your web application using a domain name.
 
@@ -118,5 +186,3 @@ By completing this assignment, you'll learn how to:
 
 - If this setup works well, try scaling it by adding more instances to the auto-scaling group or adjusting the load balancer's rules.
 - You can also explore advanced AWS services, such as S3 for file storage or RDS for database management.
-
-Let me know if you need further clarifications!
