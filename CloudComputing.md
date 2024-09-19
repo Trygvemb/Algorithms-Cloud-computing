@@ -6,6 +6,8 @@ title : "Cloud Computing"
 - [Study Plan for Cloud Computing](CloudComputingStudyPlan.md)
 - [GitHub Project for Practicing Cloud Computing](https://github.com/Trygvemb/CloudPractice)
 - [AWS Cloud Essential, Course Notes](AWS.md)
+- [Assignment: Basic AWS Networking and EC2 Setup with Load Balancer and Domain](Assignment.AWSNetworkingAndSetup.md)
+
 
 ### Reading List
 

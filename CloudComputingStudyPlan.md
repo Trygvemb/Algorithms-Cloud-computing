@@ -25,7 +25,7 @@ title: "Study Plan for Cloud Computing"
   - Set up a VPC with subnets, route tables, security groups, and a NAT gateway on AWS.
   - Create a secure EC2 instance, set up an Elastic Load Balancer, and attach Auto Scaling.
   - Practice configuring DNS and routing traffic using Route 53.
-  [Assignment: Basic AWS Networking and EC2 Setup](Assignment:AWSNetworkingAndEC2Setup.md)
+    - [Assignment: Basic AWS Networking and EC2 Setup with Load Balancer and Domain](Assignment.AWSNetworkingAndSetup.md)
 
 #### **3. Compute Services**
 
