@@ -149,9 +149,9 @@ Now that you have HTTP set up and running, let's configure **HTTPS** (secure HTT
    - Add **HTTP (port 80)** as a listener.
    - Associate the load balancer with the **public subnet**.
 
-2. **Target Group and EC2 Registration:**
-   - Create a target group for the load balancer and add the running EC2 instance as a target.
-   - Test that the load balancer distributes traffic by accessing the **load balancer's DNS** in your browser.
+   - **Target Group and EC2 Registration:**
+      - Create a target group for the load balancer and add the running EC2 instance as a target.
+      - Test that the load balancer distributes traffic by accessing the **load balancer's DNS** in your browser.
 
 3. **Set Up Auto Scaling:**
    - Go to **Auto Scaling Groups** in the EC2 dashboard and create a new auto-scaling group.
@@ -170,7 +170,9 @@ Now that you have HTTP set up and running, let's configure **HTTPS** (secure HTT
    - Optionally, register a domain name and route traffic to your load balancer using this custom domain.
 
 2. **Test DNS Configuration:**
+   - Propagation can take up to 48 hours
    - After setting up DNS, wait for propagation and test accessing your web application using the domain name.
+      - [nslookup.io/](https://www.nslookup.io/) or [dnschecker.org](https://dnschecker.org/) can help check DNS propagation status.
 
 ---
 
