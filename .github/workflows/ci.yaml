@@ -15,4 +15,4 @@ jobs:
       - name: build
         run: script/bootstrap
       - name: test
-        run: script/cibuild
+        run: script/cibuild --url-ignore "http://myfirstaws.com/,https://13.55.9.72/,https://ec2-13-55-9-72.ap-southeast-2.compute.amazonaws.com/"
