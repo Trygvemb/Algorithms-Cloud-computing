@@ -5,7 +5,7 @@ Title: "Algorithms"
 ## Resources
 
 - [Algorithms Notes](AlgorithmsNotes.md)
-- [Study Plan for Algorithms](AlgorithmsStudyPlan.md)
+- [Study Plan for Algorithms](StudyPlanAlgorithms.md)
 - [GitHub Project for Practicing Algorithms](https://github.com/Trygvemb/AlgorithmPractice)
 
 ### Reading List
