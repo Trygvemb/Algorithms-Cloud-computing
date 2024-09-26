@@ -191,6 +191,8 @@ Now that you have HTTP set up and running, let's configure **HTTPS** (secure HTT
 
 ---
 
+# Remember to Terminate Resources After Testing to Avoid Unnecessary Charges!
+
 ## Finished Assignment
 
 - See website hosted on AWS with EC2 Instance:
