@@ -121,4 +121,4 @@ title: "Microsoft Azure Fundamentals"
 
 ## Part 3: Describe Azure management and governance.
 
-## Part 3: Describe Azure management and governance.
+

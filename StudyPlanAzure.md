@@ -21,7 +21,7 @@ title: Azure Study Plan
 
 - **Goal**: Learn networking concepts in Azure, including VNETs, load balancers, and DNS.
 - **Materials**:
-  - **Microsoft Learn**: [Designing and Implementing Azure Networking Solutions](https://learn.microsoft.com/en-us/training/paths/implement-networking/).
+  - **Microsoft Learn**: [Designing and Implementing Azure Networking Solutions](https://learn.microsoft.com/en-us/training/paths/design-implement-microsoft-azure-networking-solutions-az-700/).
   - Study resources on Virtual Networks (VNet), VPN Gateway, and ExpressRoute.
 - **Exercises**:
   - Create a Virtual Network (VNet) and configure subnets.
@@ -49,7 +49,7 @@ title: Azure Study Plan
 
 - **Goal**: Learn about Azure storage options and data management.
 - **Materials**:
-  - **Microsoft Learn**: [Azure Storage](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-storage/).
+  - **Microsoft Learn**: [Azure Storage](https://learn.microsoft.com/en-us/training/paths/az-104-monitor-backup-resources/).
   - Books: "Cloud Data Management in Azure" by Susan Smith.
 - **Exercises**:
   - Set up **Azure Blob Storage** and practice uploading files and using security features.
@@ -63,7 +63,7 @@ title: Azure Study Plan
 
 - **Goal**: Understand how to deploy and manage databases in Azure.
 - **Materials**:
-  - **Microsoft Learn**: [Azure Database](https://learn.microsoft.com/en-us/training/modules/introduction-azure-database/).
+  - **Microsoft Learn**: [Azure Database](https://learn.microsoft.com/en-us/training/paths/introduction-to-azure-database-administration/).
   - Courses on **Azure SQL Database**, **Cosmos DB**, and **Azure Database for MySQL/PostgreSQL**.
 - **Exercises**:
   - Deploy and manage an **Azure SQL Database** with automatic scaling and backups.
@@ -76,7 +76,7 @@ title: Azure Study Plan
 
 - **Goal**: Learn security best practices and how to manage identity and access.
 - **Materials**:
-  - **Microsoft Learn**: [Azure Security Management](https://learn.microsoft.com/en-us/training/modules/secure-apps-azure/).
+  - **Microsoft Learn**: [Azure Security Documentation](https://learn.microsoft.com/en-us/azure/security/).
   - Read: "Azure Security Best Practices" whitepaper.
 - **Exercises**:
   - Set up **Azure Active Directory (AAD)** for identity management.
@@ -90,7 +90,7 @@ title: Azure Study Plan
 
 - **Goal**: Implement DevOps practices using Azure tools.
 - **Materials**:
-  - **Microsoft Learn**: [Azure DevOps](https://learn.microsoft.com/en-us/training/paths/devops/).
+  - **Microsoft Learn**: [Azure DevOps](https://learn.microsoft.com/en-us/training/career-paths/devops-engineer).
   - Book: "Mastering Azure DevOps" by Julian Sharp.
 - **Exercises**:
   - Use **Azure DevOps Pipelines** to automate CI/CD workflows.
@@ -104,7 +104,7 @@ title: Azure Study Plan
 
 - **Goal**: Architect highly available, resilient systems on Azure.
 - **Materials**:
-  - **Microsoft Learn**: [Design for Reliability](https://learn.microsoft.com/en-us/training/modules/design-reliable-application/).
+  - **Microsoft Learn**: [Design for Reliability](https://learn.microsoft.com/en-us/training/career-paths/solution-architect).
   - Read: "Architecting for Reliability in Azure" (Whitepaper).
 - **Exercises**:
   - Set up multi-region deployments for fault tolerance using **Azure Traffic Manager**.
@@ -117,7 +117,7 @@ title: Azure Study Plan
 
 - **Goal**: Learn how to monitor and optimize Azure usage to control costs.
 - **Materials**:
-  - **Microsoft Learn**: [Azure Cost Management](https://learn.microsoft.com/en-us/training/modules/optimize-azure-cost/).
+  - **Microsoft Learn**: [Azure Cost Management](https://learn.microsoft.com/en-us/training/paths/control-spending-manage-bills/).
   - Read: "Azure Cost Management Best Practices".
 - **Exercises**:
   - Use **Azure Cost Management** to analyze resource usage and identify areas for savings.
@@ -139,7 +139,8 @@ title: Azure Study Plan
 
 ---
 
-### **Study Tips**:
+### **Study Tips**
+
 - **Hands-on labs** are crucial. Leverage the **Azure free tier** for real-world practice.
 - **Document your projects** and learnings by writing blog posts or GitHub repositories.
 - **Join Azure communities** like **Azure Reddit**, **LinkedIn**, and **Azure Slack** for learning support and discussions.
