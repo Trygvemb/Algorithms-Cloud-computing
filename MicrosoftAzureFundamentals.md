@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Azure Fundamentals"
 ---
-## Part 1: Describe cloud concepts
+## Module 1: Describe cloud concepts
 
 ### 1: Describe Cloud Computing
 
@@ -59,9 +59,11 @@ title: "Microsoft Azure Fundamentals"
     - **PaaS**: Ideal for developers who want to focus on building applications without managing the underlying infrastructure.
     - **SaaS**: Best for end-users who need access to software applications without worrying about maintenance or updates.
 
-## Part 2: Describe Azure architecture and services
+## Module 2: Microsoft Azure Fundamentals: Describe Azure architecture and services
 
-### 1: Describe the core architectural components of Azure
+### Part 2: Describe Azure architecture and services
+
+#### 1: Describe the core architectural components of Azure
 
 1. **Describe Azure regions, region pairs, and sovereign regions**
     - Azure regions are geographical areas containing one or more datacenters. Region pairs are two regions within the same geography for disaster recovery. Sovereign regions are isolated regions for compliance with specific regulations.
@@ -84,7 +86,7 @@ title: "Microsoft Azure Fundamentals"
 7. **Describe the hierarchy of resource groups, subscriptions, and management groups**
     - The hierarchy starts with management groups at the top, followed by subscriptions, and then resource groups, which contain the individual resources.
 
-### 2: Describe Azure compute and networking services
+#### 2: Describe Azure compute and networking services
 
 1. **Compare compute types, including container instances, virtual machines, and functions**
     - **Container Instances**: Lightweight, fast to start, and ideal for microservices and small applications.
@@ -119,6 +121,184 @@ title: "Microsoft Azure Fundamentals"
     - **Public Endpoints**: Accessible over the internet.
     - **Private Endpoints**: Accessible only within a private network, enhancing security.
 
-## Part 3: Describe Azure management and governance.
+### Part 3: Describe Azure storage services
 
+#### 1: Compare Azure storage services
 
+1. **Azure Blob Storage**
+    - Object storage solution for the cloud, optimized for storing massive amounts of unstructured data.
+
+2. **Azure File Storage**
+    - Fully managed file shares in the cloud that are accessible via the SMB protocol.
+
+3. **Azure Queue Storage**
+    - Service for storing large numbers of messages that can be accessed from anywhere via authenticated calls.
+
+4. **Azure Table Storage**
+    - NoSQL key-value store for rapid development using massive semi-structured datasets.
+
+#### 2: Describe storage tiers
+
+1. **Hot Tier**
+    - Optimized for data that is accessed frequently.
+
+2. **Cool Tier**
+    - Optimized for data that is infrequently accessed and stored for at least 30 days.
+
+3. **Cold Tier**
+    - Optimized for data that is infrequently accessed and stored for at least 90 days.
+
+4. **Archive Tier**
+    - Optimized for data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
+
+#### 3: Describe redundancy options
+
+1. **Locally Redundant Storage (LRS)**
+    - Replicates data three times within a single datacenter.
+
+2. **Zone-Redundant Storage (ZRS)**
+    - Replicates data across three Azure availability zones in a region.
+
+3. **Geo-Redundant Storage (GRS)**
+    - Replicates data to a secondary region, providing higher durability.
+
+4. **Read-Access Geo-Redundant Storage (RA-GRS)**
+    - Same as GRS but also allows read access to the data in the secondary region.
+
+#### 4: Describe storage account options and storage types
+
+1. **General-purpose v2 (GPv2)**
+    - Supports all the latest Azure storage features, including Blob, File, Queue, and Table storage.
+
+2. **Blob Storage Accounts**
+    - Specialized for storing unstructured data as blobs (objects).
+
+3. **File Storage Accounts**
+    - Specialized for file shares that use the SMB protocol.
+
+#### 5: Identify options for moving files
+
+1. **AzCopy**
+    - Command-line utility for copying data to and from Azure storage.
+
+2. **Azure Storage Explorer**
+    - Standalone app for managing Azure storage data on Windows, macOS, and Linux.
+
+3. **Azure File Sync**
+    - Centralizes file shares in Azure Files while keeping the flexibility, performance, and compatibility of an on-premises file server.
+
+#### 6: Describe migration options
+
+1. **Azure Migrate**
+    - Central hub for discovering, assessing, and migrating on-premises applications, infrastructure, and data to Azure.
+
+2. **Azure Data Box**
+    - Physical devices that help transfer large amounts of data to Azure when network transfer is not feasible.
+
+### Part 4: Describe Azure identity, access, and security
+
+#### 1: Describe directory services in Azure
+
+1. **Microsoft Entra ID**
+    - Microsoft Entra ID (formerly Azure Active Directory) is a cloud-based identity and access management service that helps employees sign in and access resources.
+
+2. **Microsoft Entra Domain Services**
+    - Provides managed domain services such as domain join, group policy, and LDAP, compatible with Windows Server Active Directory.
+
+#### 2: Describe authentication methods in Azure
+
+1. **Single Sign-On (SSO)**
+    - Allows users to access multiple applications with a single set of login credentials, improving user experience and security.
+
+2. **Multifactor Authentication (MFA)**
+    - Requires two or more verification methods, adding an extra layer of security beyond just a password.
+
+3. **Passwordless**
+    - Authentication methods that do not require a password, such as biometrics or security keys, enhancing security and user convenience.
+
+#### 3: Describe external identities and guest access in Azure
+
+1. **External Identities**
+    - Allows organizations to provide access to their resources to users outside their organization, such as partners or customers.
+
+2. **Guest Access**
+    - Enables collaboration by allowing external users to access internal resources while maintaining control over their data.
+
+#### 4: Describe Microsoft Entra Conditional Access
+
+- Conditional Access policies allow organizations to control access to their applications based on specific conditions, such as user location, device state, or risk level.
+
+#### 5: Describe Azure Role Based Access Control (RBAC)
+
+- RBAC allows organizations to manage access to Azure resources by assigning roles to users, groups, and applications, ensuring that users have only the permissions they need.
+
+#### 6: Describe the concept of Zero Trust
+
+- Zero Trust is a security model that assumes breaches are inevitable and focuses on verifying every access request, regardless of its origin, to protect resources.
+
+#### 7: Describe the purpose of the defense in depth model
+
+- Defense in depth is a layered security approach that uses multiple security measures to protect resources, ensuring that if one layer fails, others still provide protection.
+
+#### 8: Describe the purpose of Microsoft Defender for Cloud
+
+- Microsoft Defender for Cloud provides unified security management and advanced threat protection across hybrid cloud workloads, helping to detect and respond to threats.
+
+## Module 3: Microsoft Azure Fundamentals: Describe Azure management and governance
+
+### 1: Describe cost management in Azure
+
+1. **Describe factors that can affect costs in Azure**
+    - Factors that can affect costs in Azure include the type of resources used, the region where resources are deployed, the amount of data transfer, and the level of support and service agreements.
+
+2. **Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator**
+    - **Pricing Calculator**: Helps estimate the cost of Azure services based on specific configurations and usage patterns.
+    - **Total Cost of Ownership (TCO) Calculator**: Compares the cost of running workloads on-premises versus in Azure, considering factors like hardware, software, and operational costs.
+
+3. **Describe the Microsoft Cost Management tool**
+    - Microsoft Cost Management provides tools to monitor, allocate, and optimize cloud spending, helping organizations manage their Azure costs effectively.
+
+4. **Describe the purpose of tags**
+    - Tags are metadata elements that can be applied to Azure resources to organize and manage them effectively, enabling better cost tracking, resource management, and automation.
+
+### 2: Describe features and tools in Azure for governance and compliance
+
+1. **Describe the purpose of Microsoft Purview**
+    - Microsoft Purview provides unified data governance solutions to manage and govern on-premises, multi-cloud, and software-as-a-service (SaaS) data.
+
+2. **Describe the purpose of Azure Policy**
+    - Azure Policy helps enforce organizational standards and assess compliance at scale by creating, assigning, and managing policies.
+
+3. **Describe the purpose of resource locks**
+    - Resource locks prevent accidental deletion or modification of critical resources by applying a lock at the subscription, resource group, or resource level.
+
+4. **Describe the purpose of the Service Trust portal**
+    - The Service Trust portal provides access to security, privacy, and compliance information for Microsoft services, helping organizations meet regulatory requirements.
+
+### 3: Describe features and tools for managing and deploying Azure resources
+
+1. **Describe Azure portal**
+    - The Azure portal is a web-based interface that provides a unified view and management of Azure resources, allowing users to create, configure, and monitor services.
+
+2. **Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell**
+    - Azure Cloud Shell is an integrated shell accessible from the Azure portal, providing a browser-based command-line experience with tools like Azure CLI and Azure PowerShell for managing Azure resources.
+
+3. **Describe the purpose of Azure Arc**
+    - Azure Arc extends Azure management and governance capabilities to on-premises, multi-cloud, and edge environments, enabling a consistent management experience across hybrid and multi-cloud environments.
+
+4. **Describe Azure Resource Manager (ARM) and Azure ARM templates**
+    - Azure Resource Manager (ARM) is the deployment and management service for Azure, providing a consistent management layer. ARM templates are JSON files that define the infrastructure and configuration for Azure resources, enabling repeatable deployments.
+
+### 4: Describe monitoring tools in Azure
+
+1. **Describe the purpose of Azure Advisor**
+    - Azure Advisor provides personalized best practices and recommendations to optimize Azure deployments, focusing on high availability, security, performance, and cost.
+
+2. **Describe Azure Service Health**
+    - Azure Service Health provides personalized alerts and guidance when Azure service issues affect you, helping you understand the impact and keep your services running smoothly.
+
+3. **Describe Azure Monitor, including Azure Log Analytics, Azure Monitor Alerts, and Application Insights**
+    - **Azure Monitor**: Collects, analyzes, and acts on telemetry data from Azure and on-premises environments to maximize performance and availability.
+    - **Azure Log Analytics**: A tool within Azure Monitor that helps collect and analyze log data from various sources.
+    - **Azure Monitor Alerts**: Provides alerting and notification capabilities to proactively identify and address issues.
+    - **Application Insights**: An application performance management service within Azure Monitor that helps monitor live applications, detect anomalies, and diagnose issues.
