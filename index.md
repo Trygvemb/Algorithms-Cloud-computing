@@ -4,6 +4,8 @@ title : "Introduction"
 
 Welcome to my portfolio, where I document my learning journey and projects as part of my Computer Science and Software Development education. This semester, I have chosen two elective courses: **Algorithms** and **Cloud Computing**. Alongside these subjects, I am also working on a project for the company WePack with my team.
 
+For a more detailed overview of my progress, you can check out my [Study Log](StudyLog.md).
+
 # [Algorithms](Algorithms.md)
 
 **Why I Chose Algorithms**

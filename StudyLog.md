@@ -1,4 +1,6 @@
-# Study Log
+---
+title: Study Log
+---
 
 ## August
 

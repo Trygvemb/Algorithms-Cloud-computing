@@ -7,6 +7,7 @@ title : "Cloud Computing"
 - [Study Plan for Azure](StudyPlanAzure.md)
 - [GitHub Project for Practicing Cloud Computing](https://github.com/Trygvemb/CloudPractice)
 - [AWS Cloud Essential, Course Notes](AWS.md)
+- [Microsoft Azure Fundamentals, Course Notes](MicrosoftAzureFundamentals.md)
 - [Assignment: Basic AWS Networking and EC2 Setup with Load Balancer and Domain](Assignment.AWSNetworkingAndSetup.md)
 
 
@@ -22,7 +23,7 @@ title : "Cloud Computing"
 
 ##### Subject Description
 
-Cloud Computing refers to the concept of delivering various services over the internet, which include data storage, servers, databases, networking, software, etc. I have chosen this subject because it is a core competency in modern software development and allows for working with scalable and flexible systems. Additionally, it is an area that is relevant to many job opportunities, particularly in relation to cloud platforms such as AWS.
+Cloud Computing refers to the concept of delivering various services over the internet, which include data storage, servers, databases, networking, software, etc. I have chosen this subject because it is a core competency in modern software development and allows for working with scalable and flexible systems. Additionally, it is an area that is relevant to many job opportunities, particularly in relation to cloud platforms such as AWS and Azure.
 
 ##### Formulation of Learning Objectives
 
@@ -38,6 +39,7 @@ Cloud Computing refers to the concept of delivering various services over the in
 **Skills**
 
 - Configure and manage cloud services using AWS.
+- Configure and manage cloud services using Azure.
 - Design and implement scalable systems in cloud environments.
 - Implement security measures to protect data and applications in the cloud.
 - Use cloud-based tools to monitor and troubleshoot systems.
@@ -51,7 +53,8 @@ Cloud Computing refers to the concept of delivering various services over the in
 
 ###### Short-Term Learning Objectives
 
-- Complete an online course in AWS Certified Solutions Architect.
+- Complete an online course in AWS Cloud Essential.
+- Complete an online course in Microsoft Azure Fundamentals.
 - Read and understand AWS whitepapers on security and best practices.
 - Implement a simple application using AWS cloud services (e.g., S3, EC2, RDS).
 - Practice designing cloud architectures through hands-on exercises and mock exams.
