@@ -23,14 +23,14 @@ title: Study Log
 
 ### Week 39
 
-- Microsoft Azure Fundamentals | Describe cloud concepts [Link](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+- Microsoft Azure Fundamentals: Describe cloud concepts [Link](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
 - Docker Get Started Course [Link](https://docs.docker.com/get-started)
 
 ### Week 40
 
-- Microsoft Azure Fundamentals | Describe Azure architecture and services [Link](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+- Microsoft Azure Fundamentals: Describe Azure architecture and services [Link](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
 
-- Microsoft Azure Fundamentals | Describe Azure management and governance [Link](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
+- Microsoft Azure Fundamentals: Describe Azure management and governance [Link](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
   - Finished Microsoft Azure Fundamentals.
 
 ## October
