@@ -192,19 +192,3 @@ Now that you have HTTP set up and running, let's configure **HTTPS** (secure HTT
 ---
 
 # Remember to Terminate Resources After Testing to Avoid Unnecessary Charges!
-
-## Finished Assignment
-
-- See website hosted on AWS with EC2 Instance:
-   - [Public IPv4 DNS with HTTP](http://ec2-13-55-9-72.ap-southeast-2.compute.amazonaws.com/)
-   - [Public IPv4 address with HTTP](http://13.55.9.72/)
-
-- See website hosted on AWS with EC2 Instance with HTTPS: Copy paste the following links in your browser since external insecure links generate error with the CI pipeline.
-   - Public IPv4 DNS with HTTPS ```https://ec2-13-55-9-72.ap-southeast-2.compute.amazonaws.com/```
-   - Public IPv4 address with HTTPS ```https://13.55.9.72/```
-
-- See website hosted on AWS with Elastic Load Balancer:
-   - [Load Balancer DNS with HTTP](http://mybalancer-1113359172.ap-southeast-2.elb.amazonaws.com/)
-
-- See website hosted on AWS with Route 53: (Not yet available)
-   - Custom Domain with HTTP ```myfirstaws.com```
