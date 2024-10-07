@@ -38,7 +38,9 @@ title: "Study Plan for Data Structures and Algorithms"
 
 - **Materials**:
   - Read: Chapter on Hash Tables in "Introduction to Algorithms".
-  - Online Resources: [GeeksforGeeks Hash Table Tutorial.](https://www.geeksforgeeks.org/hashing-set-1-introduction)
+  - Online Resources: [GeeksforGeeks What is Hashing?.](https://www.geeksforgeeks.org/hashing-set-1-introduction)
+  - Online Resources: [Introduction to Map – Data Structure and Algorithm Tutorials](https://www.geeksforgeeks.org/introduction-to-map-data-structure/)
+  - Online Resources: [Introduction to Set – Data Structure and Algorithm Tutorials](https://www.geeksforgeeks.org/introduction-to-set-data-structure/)
 - **Exercises**:
   - ~~Practice problems: LeetCode (Easy/Medium: Two Sum, Group Anagrams, Top K Frequent Elements).~~
   - Implement hash table from scratch (handling collisions, hash functions).

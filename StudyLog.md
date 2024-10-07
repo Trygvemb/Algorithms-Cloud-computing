@@ -30,12 +30,15 @@ title: Study Log
 
 - Microsoft Azure Fundamentals: Describe Azure architecture and services [Link](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
 
-- Microsoft Azure Fundamentals: Describe Azure management and governance [Link](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
-  - Finished Microsoft Azure Fundamentals.
-
 ## October
 
 ### Week 41
+
+- Microsoft Azure Fundamentals: Describe Azure management and governance [Link](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/)
+  - Finished Microsoft Azure Fundamentals. [Link](https://learn.microsoft.com/en-us/training/courses/az-900t00)
+- AZ-305 Microsoft Azure Architect Design Prerequisites [Link](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-architect-design-prerequisites/)
+  - Microsoft Cloud Adoption Framework for Azure [Link](https://learn.microsoft.com/en-us/training/modules/microsoft-cloud-adoption-framework-for-azure/)
+  - Introduction to the Microsoft Azure Well-Architected Framework [Link](https://learn.microsoft.com/en-us/training/modules/azure-well-architected-introduction/)
 
 ### Week 42
 
