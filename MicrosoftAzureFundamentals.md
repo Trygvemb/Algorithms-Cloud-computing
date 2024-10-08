@@ -302,3 +302,43 @@ title: "Microsoft Azure Fundamentals"
     - **Azure Log Analytics**: A tool within Azure Monitor that helps collect and analyze log data from various sources.
     - **Azure Monitor Alerts**: Provides alerting and notification capabilities to proactively identify and address issues.
     - **Application Insights**: An application performance management service within Azure Monitor that helps monitor live applications, detect anomalies, and diagnose issues.
+
+# Extended course with Microsoft AZ-305
+
+[Link to Course](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-architect-design-prerequisites/)
+
+## Microsoft Cloud Adoption Framework for Azure
+
+[Link to Module](https://learn.microsoft.com/en-us/training/modules/microsoft-cloud-adoption-framework-for-azure/)
+
+1. **Learn How to Leverage the Cloud Adoption Framework to Identify Where Your Organization Is in the Digital Transformation Journey**
+   - The Cloud Adoption Framework provides a structured approach to help organizations understand their current state in the digital transformation journey. It offers tools and best practices to assess readiness, plan adoption strategies, and implement changes effectively. By leveraging this framework, organizations can identify their strengths, weaknesses, and areas for improvement, ensuring a smoother transition to cloud technologies.
+
+2. **Identify Triggers and Opportunities for Cloud Adoption**
+   - Triggers for cloud adoption can include business events such as mergers, acquisitions, or the need for rapid scalability. Opportunities may arise from the need to innovate, reduce costs, or improve operational efficiency. The Cloud Adoption Framework helps organizations recognize these triggers and opportunities by providing a comprehensive analysis of business needs and aligning them with cloud capabilities. This ensures that cloud adoption is driven by strategic business goals rather than ad-hoc decisions.
+
+3. **Recognize the Components Needed to Develop a Digital Transformation Strategy Around Your Business, People, and Technology**
+   - Developing a digital transformation strategy involves aligning business objectives with technological capabilities and workforce readiness. Key components include:
+     - **Business**: Understanding the organization's goals, market position, and competitive landscape to define clear objectives for digital transformation.
+     - **People**: Assessing the skills and readiness of the workforce, providing necessary training, and fostering a culture of innovation and continuous improvement.
+     - **Technology**: Identifying the right cloud services and solutions that align with business needs, ensuring security, compliance, and scalability. The Cloud Adoption Framework provides guidelines for integrating these components into a cohesive strategy that drives successful digital transformation.
+
+## Introduction to the Microsoft Azure Well-Architected Framework
+
+[Link to Module](https://learn.microsoft.com/en-us/training/modules/azure-well-architected-introduction/)
+
+1. **Describe the Pillars of the Azure Well-Architected Framework**
+   - The Azure Well-Architected Framework is built on five pillars:
+     - **Reliability**: Ensures that your application can recover from failures and continue to function.
+     - **Security**: Protects applications and data from threats.
+     - **Cost Optimization**: Manages costs to maximize the value delivered.
+     - **Operational Excellence**: Ensures that applications are effectively managed and operated.
+     - **Performance Efficiency**: Ensures that the application performs well and scales to meet demands.
+
+2. **Identify Key Principles for Creating a Solid Architectural Foundation**
+   - Key principles for creating a solid architectural foundation include:
+     - **Design for Reliability**: Implement strategies to handle failures and ensure continuous operation.
+     - **Implement Security Best Practices**: Protect data and applications through robust security measures.
+     - **Optimize Costs**: Use cost management tools and strategies to ensure efficient use of resources.
+     - **Achieve Operational Excellence**: Use monitoring and management tools to maintain and improve operational processes.
+     - **Ensure Performance Efficiency**: Design applications to scale and perform efficiently under varying loads.
