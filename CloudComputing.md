@@ -8,6 +8,8 @@ title : "Cloud Computing"
 - [GitHub Project for Practicing Cloud Computing](https://github.com/Trygvemb/CloudPractice)
 - [AWS Cloud Essential, Course Notes](AWS.md)
 - [Microsoft Azure Fundamentals, Course Notes](MicrosoftAzureFundamentals.md)
+- [Docker Get Started Course](https://docs.docker.com/get-started)
+- [Azure Developer CareerPath](AzureDeveloperCareerPath.md)
 - [Assignment: Basic AWS Networking and EC2 Setup with Load Balancer and Domain](Assignment.AWSNetworkingAndSetup.md)
 
 
