@@ -1,8 +1,6 @@
-Here is the revised version of the assignment with the addition of **How to Set Up HTTPS on Your EC2 Instance** after Part 2:
-
 ---
-
-# **Assignment: Basic AWS Networking and EC2 Setup**
+title: Assignment: Basic AWS Networking and EC2 Setup**
+---
 
 ## **Use Case:**
 

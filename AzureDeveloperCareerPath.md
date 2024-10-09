@@ -1,4 +1,6 @@
-# Azure Developer Career Path
+---
+title: Azure Developer Career Path
+---
 
 [Link to Course](https://learn.microsoft.com/en-au/plans/prq5a8d0egog4j#learn-wwl-create-azure-app-service-web-apps)
 
