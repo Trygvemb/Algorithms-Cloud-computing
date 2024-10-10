@@ -20,7 +20,7 @@ title: Study Log
 - AZ-305 Microsoft Azure Architect Design Prerequisites [Link to Course](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-architect-design-prerequisites/)
   - Finished
 - AZ-204: Implement Azure App Service web apps [Link](https://learn.microsoft.com/en-au/training/paths/create-azure-app-service-web-apps/)
-- AZ-204: Implement Azure functions [Link](https://learn.microsoft.com/en-au/training/paths/create-azure-functions/)
+- AZ-204: Implement Azure functions [Link](https://learn.microsoft.com/en-au/training/paths/implement-azure-functions/)
 
 ## November
 
