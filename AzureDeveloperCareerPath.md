@@ -249,3 +249,95 @@ Functions share a few core technical concepts and components, regardless of the 
 - **Deploy to Azure**:
   - Use the Azure Functions extension to deploy the function to Azure.
   - Monitor and manage the function in the Azure portal.
+
+## 3 Develop solutions that use Blob storage [Link](https://learn.microsoft.com/en-au/training/paths/develop-solutions-that-use-blob-storage/)
+
+Learn how to create Azure Blob storage resources, manage data through the blob storage lifecycle, and work with containers and items by using the Azure Blob storage client library V12 for .NET.
+
+### 3.1 Explore Azure Blob storage
+
+#### 3.1.1 **Understanding Azure Blob Storage: Features, Types of Storage Accounts, and Access Tiers**
+
+- **Features**:
+  - **Scalability**: Handles large amounts of unstructured data.
+  - **Durability**: Data is replicated to ensure high availability.
+  - **Security**: Supports encryption and access control mechanisms.
+  - **Integration**: Easily integrates with other Azure services.
+
+- **Types of Storage Accounts**:
+  - **General-purpose v2**: Supports all storage services and features.
+  - **Blob Storage**: Optimized for storing large amounts of unstructured data.
+  - **Premium Block Blob**: Provides low-latency access for high transaction workloads.
+
+- **Access Tiers**:
+  - **Hot**: Optimized for data that is accessed frequently.
+  - **Cool**: Suitable for data that is infrequently accessed and stored for at least 30 days.
+  - **Archive**: Best for data that is rarely accessed and stored for at least 180 days.
+
+#### 3.1.2 **Understanding Azure Blob Storage: Storage Accounts, Containers, and Blobs**
+
+- **Storage Accounts**: Provide a unique namespace for your Azure Storage data.
+- **Containers**: Organize blobs within a storage account, similar to directories in a file system.
+- **Blobs**: Store the actual data. Types of blobs include:
+  - **Block Blobs**: Store text and binary data, ideal for files and documents.
+  - **Append Blobs**: Optimized for append operations, suitable for logging.
+  - **Page Blobs**: Store random-access files up to 8 TB in size, used for virtual hard disks.
+
+#### 3.1.3 **Understanding Azure Storage Security and Encryption Features**
+
+- **Security Features**:
+  - **Shared Access Signatures (SAS)**: Provide limited access to storage resources.
+  - **Azure Active Directory (AAD)**: Integrate with AAD for fine-grained access control.
+  - **Role-Based Access Control (RBAC)**: Assign roles to users and groups for access management.
+
+- **Encryption Features**:
+  - **Server-Side Encryption (SSE)**: Automatically encrypts data at rest using Microsoft-managed keys or customer-managed keys.
+  - **Client-Side Encryption**: Encrypts data before uploading to Azure Storage.
+  - **Transport Layer Security (TLS)**: Ensures data is encrypted during transit.
+
+### 3.2 Manage the Azure Blob storage lifecycle
+
+#### 3.2.1 **Describe how each of the access tiers is optimized**
+
+- **Hot Tier**:
+  - Optimized for data that is accessed frequently.
+  - Low latency and high throughput.
+  - Higher storage costs but lower access costs.
+
+- **Cool Tier**:
+  - Suitable for data that is infrequently accessed and stored for at least 30 days.
+  - Lower storage costs compared to the hot tier.
+  - Higher access costs and retrieval latency.
+
+- **Archive Tier**:
+  - Best for data that is rarely accessed and stored for at least 180 days.
+  - Lowest storage costs.
+  - Highest access costs and retrieval latency, as data needs to be rehydrated before access.
+
+#### 3.2.2 **Create and implement a lifecycle policy**
+
+- **Lifecycle Management**: Automates the transition of blobs between access tiers based on specified rules.
+- **Policy Creation**:
+  - Navigate to your storage account in the Azure portal.
+  - Go to **Lifecycle Management** under **Data management**.
+  - Define rules to transition blobs to cooler tiers or delete them based on their age or last access time.
+  - Save the policy to apply it to your storage account.
+
+#### 3.2.3 **Rehydrate blob data stored in an archive tier**
+
+- **Rehydration Process**:
+  - Navigate to your storage account in the Azure portal.
+  - Go to the **Blobs** section and locate the archived blob.
+  - Change the access tier of the blob to **Hot** or **Cool** to initiate rehydration.
+  - The rehydration process may take several hours, depending on the size of the blob.
+  - Once rehydrated, the blob will be accessible in the specified tier.
+
+### 3.3 Work with Azure Blob storage
+
+#### 3.3.1 **Create an application to create and manipulate data by using the Azure Storage client library for Blob storage**
+
+- **Setup**:
+  - Install the **Azure.Storage.Blobs** NuGet package in your .NET project.
+  - Configure your **Azure Storage account connection string** in your application settings.
+
+See the [official documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet) for detailed instructions on creating and manipulating data using the Azure Storage client library for Blob storage.

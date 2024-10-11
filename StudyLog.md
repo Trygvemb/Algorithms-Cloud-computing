@@ -21,6 +21,7 @@ title: Study Log
   - Finished
 - AZ-204: Implement Azure App Service web apps [Link](https://learn.microsoft.com/en-au/training/paths/create-azure-app-service-web-apps/)
 - AZ-204: Implement Azure functions [Link](https://learn.microsoft.com/en-au/training/paths/implement-azure-functions/)
+- AZ-204: Develop solutions that use Blob storage [Link](https://learn.microsoft.com/en-au/training/paths/develop-solutions-that-use-blob-storage/)
 
 ## November
 
