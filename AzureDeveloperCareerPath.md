@@ -341,3 +341,424 @@ Learn how to create Azure Blob storage resources, manage data through the blob s
   - Configure your **Azure Storage account connection string** in your application settings.
 
 See the [official documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet) for detailed instructions on creating and manipulating data using the Azure Storage client library for Blob storage.
+
+## 4 Develop solutions that use Azure Cosmos DB [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
+
+Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+
+### 4.1 Explore Azure Cosmos DB
+
+Azure Cosmos DB is a globally distributed database system that allows you to read and write data from the local replicas of your database and it transparently replicates the data to all the regions associated with your Cosmos account.
+
+#### 4.1.1 **Identify the key benefits provided by Azure Cosmos DB**
+
+- **Global Distribution**: Distribute data across multiple Azure regions with multi-master replication.
+- **Elastic Scalability**: Automatically scale throughput and storage based on demand.
+- **Low Latency**: Provides single-digit millisecond response times for both reads and writes.
+- **Multiple APIs**: Supports various APIs including SQL, MongoDB, Cassandra, Gremlin, and Table.
+- **Comprehensive SLAs**: Offers SLAs for availability, throughput, consistency, and latency.
+
+#### 4.1.2 **Describe the elements in an Azure Cosmos DB account and how they're organized**
+
+- **Account**: The top-level resource that contains databases.
+- **Database**: A container for collections, graphs, or tables.
+- **Container**: Stores items and is the unit of scalability.
+- **Item**: The actual data stored in JSON format within a container.
+
+#### 4.1.3 **Explain the different consistency levels and choose the correct one for your project**
+
+- **Strong**: Guarantees linearizability, ensuring the most recent write is always read.
+- **Bounded Staleness**: Guarantees reads lag behind writes by a specified time or number of versions.
+- **Session**: Guarantees consistency within a single session.
+- **Consistent Prefix**: Guarantees reads never see out-of-order writes.
+- **Eventual**: Guarantees eventual consistency without ordering guarantees.
+
+#### 4.1.4 **Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution**
+
+- **SQL API**: For querying JSON documents using SQL syntax.
+- **MongoDB API**: For applications using MongoDB drivers.
+- **Cassandra API**: For applications using Cassandra drivers.
+- **Gremlin API**: For graph-based applications.
+- **Table API**: For applications using Azure Table storage.
+
+#### 4.1.5 **Describe how request units impact costs**
+
+- **Request Units (RUs)**: Measure the cost of database operations. Each operation consumes a certain number of RUs.
+- **Cost Management**: Optimize costs by adjusting the provisioned throughput (RUs per second) based on workload requirements.
+
+#### 4.1.6 **Create Azure Cosmos DB resources by using the Azure portal**
+
+- **Setup**:
+  - Navigate to the Azure portal and create a new Azure Cosmos DB account.
+  - Choose the desired API and configure the account settings.
+  - Create a new database and container within the account.
+  - Define the partition key and provision throughput for the container.
+
+### 4.2 Work with Azure Cosmos DB
+
+#### 4.2.1 **Identify classes and methods used to create resources**
+
+- **CosmosClient**: The primary class for interacting with Azure Cosmos DB.
+- **Database**: Represents a database in Azure Cosmos DB.
+- **Container**: Represents a container within a database.
+- **Item**: Represents an item within a container.
+
+#### 4.2.2 **Create resources by using the Azure Cosmos DB .NET v3 SDK**
+
+- **Setup**:
+  - Install the **Microsoft.Azure.Cosmos** NuGet package in your .NET project.
+  - Initialize a **CosmosClient** instance with your connection string.
+  - Use the client to create databases, containers, and items.
+
+#### 4.2.3 **Write stored procedures, triggers, and user-defined functions by using JavaScript**
+
+- **Stored Procedures**: Define server-side logic executed within a transaction.
+- **Triggers**: Execute custom logic before or after operations on items.
+- **User-Defined Functions (UDFs)**: Extend query capabilities with custom logic.
+
+#### 4.2.4 **Implement change feed notifications**
+
+- **Change Feed**: Provides a sorted list of changes (inserts and updates) to items within a container.
+- **Setup**:
+  - Use the **ChangeFeedProcessor** class to process changes.
+  - Configure the processor to listen for changes and handle them accordingly.
+
+## 5 Implement containerized solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-iaas-solutions/)
+
+Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+
+### 5.1 Manage container images in Azure Container Registry
+
+Azure Container Registry (ACR) is a managed, private Docker registry service based on the open-source Docker Registry 2.0. Create and maintain Azure container registries to store and manage your private Docker container images.
+
+#### 5.1.1 **Explain the features and benefits Azure Container Registry offers**
+
+- **Managed Service**: Fully managed by Azure, reducing operational overhead.
+- **Private Registry**: Securely store and manage Docker container images.
+- **Integration**: Seamlessly integrates with Azure Kubernetes Service (AKS) and other Azure services.
+- **Geo-Replication**: Replicate container images across multiple Azure regions for high availability.
+- **ACR Tasks**: Automate image builds and deployments with ACR Tasks.
+
+#### 5.1.2 **Describe how to use ACR Tasks to automate builds and deployments**
+
+- **ACR Tasks**: Automate container image builds and deployments directly within ACR.
+- **Build Tasks**: Define tasks to build images from Dockerfiles or source code repositories.
+- **Multi-Step Tasks**: Create complex workflows with multiple steps, including build, test, and deploy.
+- **Triggers**: Automatically trigger tasks based on source code changes, base image updates, or schedule.
+
+#### 5.1.3 **Explain the elements in a Dockerfile**
+
+- **FROM**: Specifies the base image for the container.
+- **RUN**: Executes commands in the container during the build process.
+- **COPY**: Copies files from the host to the container.
+- **CMD**: Specifies the command to run when the container starts.
+- **EXPOSE**: Defines the ports the container listens on.
+- **ENV**: Sets environment variables in the container.
+
+#### 5.1.4 **Build and run an image in the ACR by using Azure CLI**
+
+- **Build Image**:
+  - Use `az acr build` to build a Docker image from a Dockerfile.
+  - Example: `az acr build --registry <ACR_NAME> --image <IMAGE_NAME> .`
+- **Run Image**:
+  - Use `az acr repository show-tags` to list available images.
+  - Deploy the image to a container service like Azure Kubernetes Service (AKS) or Azure Container Instances (ACI).
+
+### 5.2 Run container images in Azure Container Instances
+
+Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+
+#### 5.2.1 **Describe the benefits of Azure Container Instances and how resources are grouped**
+
+- **Quick Deployment**: Deploy containers without managing virtual machines or orchestrators.
+- **Scalability**: Scale containers up or down based on demand.
+- **Isolation**: Run containers in isolated environments for security.
+- **Resource Grouping**: Group related resources for easier management and billing.
+
+#### 5.2.2 **Deploy a container instance in Azure by using the Azure CLI**
+
+- **Deploy Container**:
+  - Use `az container create` to deploy a container instance.
+  - Example: `az container create --resource-group <RESOURCE_GROUP> --name <CONTAINER_NAME> --image <IMAGE_NAME> --cpu 1 --memory 1.5`
+
+#### 5.2.3 **Start and stop containers using policies**
+
+- **Restart Policies**:
+  - **Always**: Always restart the container if it stops.
+  - **OnFailure**: Restart the container only if it stops with an error.
+  - **Never**: Never restart the container.
+  - Example: `az container create --restart-policy OnFailure`
+
+#### 5.2.4 **Set environment variables in your container instances**
+
+- **Environment Variables**:
+  - Use `--environment-variables` to set environment variables.
+  - Example: `az container create --environment-variables KEY=VALUE`
+
+#### 5.2.5 **Mount file shares in your container instances**
+
+- **Mount Azure File Share**:
+  - Use `--azure-file-volume-account-name`, `--azure-file-volume-account-key`, and `--azure-file-volume-share-name` to mount an Azure File Share.
+  - Example: `az container create --azure-file-volume-account-name <STORAGE_ACCOUNT> --azure-file-volume-account-key <ACCOUNT_KEY> --azure-file-volume-share-name <SHARE_NAME>`
+
+### 5.3 Implement Azure Container Apps
+
+Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
+
+#### 5.3.1 **Describe the benefits of Azure Container Apps**
+
+- **Serverless Platform**: Deploy and manage containerized apps without managing infrastructure.
+- **Microservices**: Ideal for deploying microservices architectures.
+- **Scalability**: Automatically scale based on HTTP traffic, events, or custom metrics.
+- **Integration**: Integrates with Dapr for building distributed applications.
+
+#### 5.3.2 **Deploy a container app in Azure by using the Azure CLI**
+
+- **Deploy Container App**:
+  - Use `az containerapp create` to deploy a container app.
+  - Example: `az containerapp create --resource-group <RESOURCE_GROUP> --name <APP_NAME> --image <IMAGE_NAME> --environment <ENVIRONMENT_NAME>`
+
+#### 5.3.3 **Start and stop containers using policies**
+
+- **Scaling Policies**:
+  - Define scaling rules based on HTTP traffic, events, or custom metrics.
+  - Example: `az containerapp scale --name <APP_NAME> --resource-group <RESOURCE_GROUP> --min-replicas 1 --max-replicas 10`
+
+#### 5.3.4 **Set environment variables in your container apps**
+
+- **Environment Variables**:
+  - Use `--env-vars` to set environment variables.
+  - Example: `az containerapp update --name <APP_NAME> --resource-group <RESOURCE_GROUP> --env-vars KEY=VALUE`
+
+#### 5.3.5 **Mount file shares in your container apps**
+
+- **Mount Azure File Share**:
+  - Use `--storage-account-name`, `--storage-account-key`, and `--storage-share-name` to mount an Azure File Share.
+  - Example: `az containerapp update --name <APP_NAME> --resource-group <RESOURCE_GROUP> --storage-account-name <STORAGE_ACCOUNT> --storage-account-key <ACCOUNT_KEY> --storage-share-name <SHARE_NAME>`
+
+## 6 Implement user authentication and authorization [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-authentication-authorization/)
+
+Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
+
+### 6.1 Explore the Microsoft identity platform
+
+#### 6.1.1 **Identify the components of the Microsoft identity platform**
+
+- **Azure Active Directory (Azure AD)**: The backbone of the Microsoft identity platform, providing identity and access management.
+- **OAuth 2.0 and OpenID Connect**: Protocols used for authentication and authorization.
+- **Microsoft Authentication Library (MSAL)**: Libraries for integrating authentication into applications.
+
+#### 6.1.2 **Describe the three types of service principals and how they relate to application objects**
+
+- **User Principal**: Represents a user in Azure AD.
+- **Application Principal**: Represents an application in Azure AD.
+- **Managed Identity**: Represents a service principal for Azure resources, simplifying access to other resources.
+
+#### 6.1.3 **Explain how permissions and user consent operate, and how conditional access impacts your application**
+
+- **Permissions**: Define what an application can do on behalf of a user or itself.
+- **User Consent**: Users must consent to the permissions an application requests.
+- **Conditional Access**: Policies that control access to applications based on conditions like user location, device state, and risk level.
+
+### 6.2 Implement authentication by using the Microsoft Authentication Library
+
+#### 6.2.1 **Explain the benefits of using MSAL and the application types and scenarios it supports**
+
+- **Benefits**: Simplifies authentication, supports multiple platforms, and integrates with Azure AD.
+- **Application Types**: Supports web apps, mobile apps, desktop apps, and daemon apps.
+- **Scenarios**: Single sign-on (SSO), multi-factor authentication (MFA), and conditional access.
+
+#### 6.2.2 **Instantiate both public and confidential client apps from code**
+
+- **Public Client**: Used for apps that run on devices or desktops.
+  ```csharp
+  var publicClientApp = PublicClientApplicationBuilder.Create(clientId)
+      .WithRedirectUri(redirectUri)
+      .Build();
+  ```
+- **Confidential Client**: Used for apps that run on servers.
+  ```csharp
+  var confidentialClientApp = ConfidentialClientApplicationBuilder.Create(clientId)
+      .WithClientSecret(clientSecret)
+      .WithRedirectUri(redirectUri)
+      .Build();
+  ```
+
+#### 6.2.3 **Register an app with the Microsoft identity platform**
+
+- **Azure Portal**: Navigate to Azure AD, select **App registrations**, and register a new application.
+- **Configuration**: Set redirect URIs, configure API permissions, and generate client secrets.
+
+#### 6.2.4 **Create an app that retrieves a token by using the MSAL.NET library**
+
+- **Acquire Token**:
+  ```csharp
+  var result = await publicClientApp.AcquireTokenInteractive(scopes)
+      .ExecuteAsync();
+  ```
+
+### 6.3 Implement shared access signatures
+
+#### 6.3.1 **Identify the three types of shared access signatures**
+
+- **User Delegation SAS**: Uses Azure AD credentials to delegate access.
+- **Service SAS**: Grants limited access to resources in a storage account.
+- **Account SAS**: Grants access to resources at the account level.
+
+#### 6.3.2 **Explain when to implement shared access signatures**
+
+- **Use Cases**: Grant temporary access to storage resources, delegate access without sharing keys, and control access at a granular level.
+
+#### 6.3.3 **Create a stored access policy**
+
+- **Stored Access Policy**: Defines the start time, expiry time, and permissions for a SAS.
+  ```csharp
+  BlobContainerClient containerClient = new BlobContainerClient(connectionString, containerName);
+  containerClient.SetAccessPolicy(PublicAccessType.Blob, new[]
+  {
+      new BlobSignedIdentifier
+      {
+          Id = "policyId",
+          AccessPolicy = new BlobAccessPolicy
+          {
+              StartsOn = DateTimeOffset.UtcNow,
+              ExpiresOn = DateTimeOffset.UtcNow.AddHours(1),
+              Permissions = "r"
+          }
+      }
+  });
+  ```
+
+### 6.4 Explore Microsoft Graph
+
+#### 6.4.1 **Explain the benefits of using Microsoft Graph**
+
+- **Unified API**: Access data from Microsoft 365 services.
+- **Rich Data**: Retrieve insights and data from various Microsoft services.
+- **Integration**: Seamlessly integrate with Azure AD, Outlook, OneDrive, and more.
+
+#### 6.4.2 **Perform operations on Microsoft Graph by using REST and SDKs**
+
+- **REST API**:
+  ```http
+  GET https://graph.microsoft.com/v1.0/me
+  ```
+- **SDK**:
+  ```csharp
+  GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+  var user = await graphClient.Me.Request().GetAsync();
+  ```
+
+#### 6.4.3 **Apply best practices to help your applications get the most out of Microsoft Graph**
+
+- **Throttling**: Handle rate limits and retry logic.
+- **Batching**: Combine multiple requests into a single call.
+- **Delta Queries**: Track changes efficiently using delta queries.
+- **Security**: Implement proper authentication and authorization mechanisms.
+
+## 7 Implement secure Azure solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-secure-cloud-solutions/)
+
+Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
+
+### 7.1 Implement Azure Key Vault
+
+Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys.
+
+#### 7.1.1 **Describe the benefits of using Azure Key Vault**
+
+- **Centralized Secret Management**: Securely store and manage access to secrets in a central location.
+- **Enhanced Security**: Secrets are protected by hardware security modules (HSMs) and access policies.
+- **Simplified Access Control**: Integrate with Azure Active Directory (Azure AD) for fine-grained access control.
+- **Audit and Compliance**: Track secret usage and access with detailed logging and monitoring.
+
+#### 7.1.2 **Explain how to authenticate to Azure Key Vault**
+
+- **Azure AD Integration**: Use Azure AD to authenticate and authorize access to Key Vault.
+- **Managed Identities**: Simplify authentication by using managed identities for Azure resources.
+- **Service Principals**: Use service principals to grant applications access to Key Vault.
+
+#### 7.1.3 **Set and retrieve a secret from Azure Key Vault by using the Azure CLI**
+
+- **Set a Secret**:
+  ```bash
+  az keyvault secret set --vault-name <VaultName> --name <SecretName> --value <SecretValue>
+  ```
+- **Retrieve a Secret**:
+  ```bash
+  az keyvault secret show --vault-name <VaultName> --name <SecretName>
+  ```
+
+### 7.2 Implement managed identities
+
+A common challenge for developers is the management of secrets and credentials used to secure communication between different components making up a solution. Managed identities eliminate the need for developers to manage credentials.
+
+#### 7.2.1 **Explain the differences between the two types of managed identities**
+
+- **System-Assigned Managed Identity**: Automatically created and managed by Azure for a specific resource.
+- **User-Assigned Managed Identity**: Created as a standalone Azure resource and can be assigned to multiple resources.
+
+#### 7.2.2 **Describe the flows for user- and system-assigned managed identities**
+
+- **System-Assigned Flow**: The identity is tied to the lifecycle of the resource and is automatically deleted when the resource is deleted.
+- **User-Assigned Flow**: The identity is managed independently and can be assigned to multiple resources, providing more flexibility.
+
+#### 7.2.3 **Configure managed identities**
+
+- **Enable System-Assigned Managed Identity**:
+  ```bash
+  az vm identity assign --name <VMName> --resource-group <ResourceGroupName>
+  ```
+- **Create and Assign User-Assigned Managed Identity**:
+  ```bash
+  az identity create --name <IdentityName> --resource-group <ResourceGroupName>
+  az vm identity assign --name <VMName> --resource-group <ResourceGroupName> --identities <IdentityId>
+  ```
+
+#### 7.2.4 **Acquire access tokens by using REST and code**
+
+- **Acquire Token Using REST**:
+  ```http
+  GET http://169.254.169.254/metadata/identity/oauth2/token?api-version=2019-08-01&resource=<Resource>
+  ```
+- **Acquire Token Using Code**:
+  ```csharp
+  var azureServiceTokenProvider = new AzureServiceTokenProvider();
+  string accessToken = await azureServiceTokenProvider.GetAccessTokenAsync("<Resource>");
+  ```
+
+### 7.3 Implement Azure App Configuration
+
+Azure App Configuration provides a service to centrally manage application settings and feature flags.
+
+#### 7.3.1 **Explain the benefits of using Azure App Configuration**
+
+- **Centralized Management**: Manage all application settings and feature flags in one place.
+- **Dynamic Configuration**: Update configuration settings without redeploying applications.
+- **Feature Management**: Enable or disable features dynamically using feature flags.
+- **Integration**: Seamlessly integrate with Azure services and development frameworks.
+
+#### 7.3.2 **Describe how Azure App Configuration stores information**
+
+- **Key-Value Pairs**: Store configuration settings as key-value pairs.
+- **Labels**: Use labels to organize and version configuration settings.
+- **Feature Flags**: Define and manage feature flags to control application behavior.
+
+#### 7.3.3 **Implement feature management**
+
+- **Create Feature Flag**:
+  ```bash
+  az appconfig feature set --name <AppConfigName> --feature <FeatureName> --label <Label>
+  ```
+- **Check Feature Status**:
+  ```bash
+  az appconfig feature show --name <AppConfigName> --feature <FeatureName> --label <Label>
+  ```
+
+#### 7.3.4 **Securely access your app configuration information**
+
+- **Access Configuration**:
+  ```csharp
+  var client = new ConfigurationClient(new Uri("<AppConfigEndpoint>"), new DefaultAzureCredential());
+  ConfigurationSetting setting = client.GetConfigurationSetting("<Key>", "<Label>");
+  ```
+- **Use Managed Identity**: Securely access App Configuration using managed identities for Azure resources.

@@ -22,6 +22,10 @@ title: Study Log
 - AZ-204: Implement Azure App Service web apps [Link](https://learn.microsoft.com/en-au/training/paths/create-azure-app-service-web-apps/)
 - AZ-204: Implement Azure functions [Link](https://learn.microsoft.com/en-au/training/paths/implement-azure-functions/)
 - AZ-204: Develop solutions that use Blob storage [Link](https://learn.microsoft.com/en-au/training/paths/develop-solutions-that-use-blob-storage/)
+- AZ-204: Develop solutions that use Azure Cosmos DB [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
+- AZ-204: Implement containerized solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-iaas-solutions/)
+- AZ-204: Implement user authentication and authorization [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-authentication-authorization/)
+- AZ-204: Implement secure Azure solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-secure-cloud-solutions/)
 
 ## November
 
