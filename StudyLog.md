@@ -26,6 +26,7 @@ title: Study Log
 - AZ-204: Implement containerized solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-iaas-solutions/)
 - AZ-204: Implement user authentication and authorization [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-authentication-authorization/)
 - AZ-204: Implement secure Azure solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-secure-cloud-solutions/)
+- AZ-204: Implement API Management [Link](https://learn.microsoft.com/en-us/training/modules/explore-api-management/1-introduction)
 
 ## November
 

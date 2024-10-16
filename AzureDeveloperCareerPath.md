@@ -762,3 +762,48 @@ Azure App Configuration provides a service to centrally manage application setti
   ConfigurationSetting setting = client.GetConfigurationSetting("<Key>", "<Label>");
   ```
 - **Use Managed Identity**: Securely access App Configuration using managed identities for Azure resources.
+
+## 8 Implement API Management [Link](https://learn.microsoft.com/en-us/training/modules/explore-api-management/1-introduction)
+
+Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+
+### 8.1 Explore API Management
+
+API Management helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
+
+#### 8.1.1 **Describe the benefits of using Azure API Management**
+
+- **Centralized Management**: Manage all your APIs in one place.
+- **Security**: Protect APIs with built-in security features like OAuth, JWT validation, and IP filtering.
+- **Transformation**: Modify requests and responses without changing backend services.
+- **Monitoring**: Gain insights into API usage and performance with built-in analytics.
+
+#### 8.1.2 **Describe the components, and their function, of the API Management service**
+
+- **API Gateway**: Acts as a facade to backend services, handling requests and responses.
+- **Developer Portal**: Provides a customizable interface for developers to discover and consume APIs.
+- **Publisher Portal**: Allows API publishers to manage APIs, policies, and analytics.
+- **Backend Services**: The actual services that process API requests.
+
+#### 8.1.3 **Explain how API gateways can help manage calls to your APIs**
+
+- **Rate Limiting**: Control the number of API calls to prevent overuse.
+- **Caching**: Improve performance by caching responses.
+- **Routing**: Direct requests to different backend services based on rules.
+- **Transformation**: Modify request and response formats as needed.
+
+#### 8.1.4 **Secure access to APIs by using subscriptions and certificates**
+
+- **Subscriptions**: Require developers to subscribe to APIs, providing control over who can access them.
+- **Certificates**: Use SSL/TLS certificates to secure communication between clients and the API gateway.
+- **OAuth2**: Implement OAuth2 for secure and scalable access control.
+- **IP Whitelisting**: Restrict access to APIs based on IP addresses.
+
+#### 8.1.5 **Create a backend API**
+
+- **Setup**:
+  - Navigate to the Azure portal and create a new API Management instance.
+  - Define a new API and configure its settings.
+  - Connect the API to a backend service.
+  - Apply policies to secure and transform the API as needed.
+
