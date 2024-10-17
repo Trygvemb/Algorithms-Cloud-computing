@@ -807,3 +807,104 @@ API Management helps organizations publish APIs to external, partner, and intern
   - Connect the API to a backend service.
   - Apply policies to secure and transform the API as needed.
 
+
+## 9 Develop message-based solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-message-based-solutions/)
+
+Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage into your solution.
+
+### 9.1 Discover Azure message queues
+
+Azure supports two types of queue mechanisms: Service Bus queues and Storage queues.
+
+#### 9.1.1 **Explain the features and use cases of Service Bus queues**
+
+- **Features**:
+  - **Advanced Messaging**: Supports queuing, publish/subscribe, and more advanced integration patterns.
+  - **Reliability**: Ensures message delivery with features like dead-lettering and duplicate detection.
+  - **Security**: Provides robust security with role-based access control (RBAC) and encryption.
+  - **Integration**: Designed to integrate applications or components across different protocols, data contracts, and network environments.
+
+- **Use Cases**:
+  - **Decoupling Applications**: Helps in decoupling application components to improve scalability and reliability.
+  - **Load Leveling**: Smooths out spikes in workload by queuing messages for later processing.
+  - **Order Processing**: Ensures messages are processed in the order they were sent.
+
+#### 9.1.2 **Describe the features and use cases of Storage queues**
+
+- **Features**:
+  - **Scalability**: Can store millions of messages, up to the total capacity limit of a storage account.
+  - **Global Access**: Access messages from anywhere in the world via authenticated HTTP or HTTPS calls.
+  - **Simple Interface**: Provides a straightforward API for managing messages.
+
+- **Use Cases**:
+  - **Backlog Processing**: Create a backlog of work to process asynchronously.
+  - **Task Scheduling**: Schedule tasks to be processed at a later time.
+  - **Event Notification**: Notify components of events that need to be processed.
+
+### 9.2 Implement message-based solutions with Service Bus
+
+#### 9.2.1 **Explain how the messaging entities that form the core capabilities of Service Bus operate**
+
+- **Queues**: Store messages until they are retrieved and processed.
+- **Topics and Subscriptions**: Enable publish/subscribe messaging patterns.
+- **Relays**: Facilitate direct communication between applications.
+
+#### 9.2.2 **Send and receive messages from a Service Bus queue by using .NET**
+
+- **Setup**:
+  - Install the **Azure.Messaging.ServiceBus** NuGet package in your .NET project.
+  - Configure your **Service Bus connection string** in your application settings.
+
+- **Send Message**:
+  ```csharp
+  var client = new ServiceBusClient(connectionString);
+  var sender = client.CreateSender(queueName);
+  var message = new ServiceBusMessage("Hello, Service Bus!");
+  await sender.SendMessageAsync(message);
+  ```
+
+- **Receive Message**:
+  ```csharp
+  var client = new ServiceBusClient(connectionString);
+  var receiver = client.CreateReceiver(queueName);
+  var message = await receiver.ReceiveMessageAsync();
+  Console.WriteLine(message.Body.ToString());
+  ```
+
+### 9.3 Implement message-based solutions with Azure Queue Storage
+
+#### 9.3.1 **Identify the key components of Azure Queue Storage**
+
+- **Queue**: A container for storing messages.
+- **Message**: The actual data stored in the queue, which can be up to 64 KB in size.
+- **Storage Account**: Provides a unique namespace for your Azure Storage data.
+
+#### 9.3.2 **Create queues and manage messages in Azure Queue Storage by using .NET**
+
+- **Setup**:
+  - Install the **Azure.Storage.Queues** NuGet package in your .NET project.
+  - Configure your **Azure Storage account connection string** in your application settings.
+
+- **Create Queue**:
+  ```csharp
+  var queueClient = new QueueClient(connectionString, queueName);
+  await queueClient.CreateIfNotExistsAsync();
+  ```
+
+- **Send Message**:
+  ```csharp
+  var queueClient = new QueueClient(connectionString, queueName);
+  await queueClient.SendMessageAsync("Hello, Queue Storage!");
+  ```
+
+- **Receive Message**:
+  ```csharp
+  var queueClient = new QueueClient(connectionString, queueName);
+  var message = await queueClient.ReceiveMessageAsync();
+  Console.WriteLine(message.Value.MessageText);
+  ```
+
+### 9.4 Choose the appropriate queue mechanism for your solution
+
+- **Service Bus Queues**: Best for complex messaging scenarios requiring advanced features like transactions, dead-lettering, and publish/subscribe patterns.
+- **Storage Queues**: Ideal for simple, scalable, and cost-effective message queuing needs.
