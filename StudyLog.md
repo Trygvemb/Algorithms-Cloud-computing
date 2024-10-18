@@ -28,8 +28,9 @@ title: Study Log
 - AZ-204: Implement secure Azure solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-implement-secure-cloud-solutions/)
 - AZ-204: Implement API Management [Link](https://learn.microsoft.com/en-us/training/modules/explore-api-management/1-introduction)
 - AZ-204: Develop message-based solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-message-based-solutions/)
+- AZ-204: Develop event-based solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-event-based-solutions/)
+- AZ-204: Troubleshoot solutions by using Application Insights [Link](https://learn.microsoft.com/en-us/training/paths/az-204-instrument-solutions-support-monitoring-logging/)
 
 ## November
 
 ## December
-
