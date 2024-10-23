@@ -40,6 +40,8 @@ title: Study Log
   - AZ-204: Develop message-based solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-message-based-solutions/)
   - AZ-204: Develop event-based solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-develop-event-based-solutions/)
   - AZ-204: Troubleshoot solutions by using Application Insights [Link](https://learn.microsoft.com/en-us/training/paths/az-204-instrument-solutions-support-monitoring-logging/)
+  - AZ-204: Implement caching for solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-integrate-caching-content-delivery-within-solutions/)
+    - Finished AZ-204 Learning plan
 
 - Notes
   - I finished the Microsoft Azure Fundamentals course and I am now doing the AZ-305 Microsoft Azure Architect Design Prerequisites course. I will then do the AZ-204 course to get a better understanding of Azure development.
