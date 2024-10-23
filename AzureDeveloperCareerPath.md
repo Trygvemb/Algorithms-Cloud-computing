@@ -1120,3 +1120,132 @@ requests
 -   **Optimization**:
 -   Use Application Insights to identify areas for improvement.
 -   Implement changes and monitor their impact.
+
+## 12 Implement caching for solutions [Link](https://learn.microsoft.com/en-au/training/paths/az-204-integrate-caching-content-delivery-within-solutions/)
+
+Learn how to integrate caching and content delivery within your solutions by using Azure Cache for Redis and Azure Content Delivery Network (CDN).
+
+### 12.1 Develop for Azure Cache for Redis
+
+Caching is a common technique that aims to improve the performance and scalability of a system. It does this by temporarily copying frequently accessed data to fast storage located close to the application. If this fast data storage is located closer to the application than the original source, then caching can significantly improve response times for client applications by serving data more quickly.
+
+#### 12.1.1 **Explain the key scenarios Azure Cache for Redis covers and its service tiers**
+
+- **Scenarios**:
+    - **Session Store**: Store session data to provide a consistent experience across different sessions.
+    - **Data Caching**: Cache frequently accessed data to reduce latency and improve performance.
+    - **Message Broker**: Use Redis as a message broker for real-time messaging and communication.
+
+- **Service Tiers**:
+    - **Basic**: Single node, ideal for development and testing.
+    - **Standard**: Replicated cache with two nodes, suitable for production workloads.
+    - **Premium**: Advanced features like persistence, clustering, and higher availability.
+
+#### 12.1.2 **Identify the key parameters for creating an Azure Cache for Redis instance and interact with the cache**
+
+- **Key Parameters**:
+    - **SKU**: Choose between Basic, Standard, and Premium.
+    - **Capacity**: Select the appropriate size based on your workload.
+    - **Network Configuration**: Configure virtual network and firewall rules for secure access.
+
+- **Interacting with the Cache**:
+    - **Setup**:
+        - Install the **StackExchange.Redis** NuGet package in your .NET project.
+        - Configure your **Redis connection string** in your application settings.
+
+    - **Connect to Cache**:
+        ```csharp
+        var connection = ConnectionMultiplexer.Connect("your_redis_connection_string");
+        var db = connection.GetDatabase();
+        ```
+
+    - **Perform Operations**:
+        ```csharp
+        // Set a value
+        db.StringSet("key", "value");
+
+        // Get a value
+        var value = db.StringGet("key");
+        ```
+
+#### 12.1.3 **Connect an app to Azure Cache for Redis by using .NET**
+
+- **Setup**:
+    - Install the **StackExchange.Redis** NuGet package in your .NET project.
+    - Configure your **Redis connection string** in your application settings.
+
+- **Connect to Cache**:
+    ```csharp
+    var connection = ConnectionMultiplexer.Connect("your_redis_connection_string");
+    var db = connection.GetDatabase();
+    ```
+
+- **Perform Operations**:
+    ```csharp
+    // Set a value
+    db.StringSet("key", "value");
+
+    // Get a value
+    var value = db.StringGet("key");
+    ```
+
+### 12.2 Develop for storage on CDNs
+
+A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. A CDN stores cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency.
+
+#### 12.2.1 **Explain how the Azure Content Delivery Network works and how it can improve the user experience**
+
+- **How it Works**:
+    - **Edge Servers**: Cache content on servers located close to end users.
+    - **POP Locations**: Distribute content from multiple points of presence to reduce latency.
+    - **Content Delivery**: Serve cached content quickly to improve load times and user experience.
+
+- **User Experience**:
+    - **Reduced Latency**: Deliver content from the nearest edge server to minimize latency.
+    - **Improved Performance**: Cache static content to reduce load on origin servers and improve performance.
+    - **Scalability**: Handle high traffic volumes by distributing content across multiple servers.
+
+#### 12.2.2 **Control caching behavior and purge content**
+
+- **Caching Behavior**:
+    - **Cache Rules**: Define rules to control how content is cached and for how long.
+    - **Cache Expiration**: Set expiration times for cached content to ensure freshness.
+
+- **Purge Content**:
+    - **Azure Portal**: Navigate to your CDN profile and purge specific content or entire paths.
+    - **Azure CLI**:
+        ```bash
+        az cdn endpoint purge --resource-group <ResourceGroupName> --profile-name <ProfileName> --name <EndpointName> --content-paths '/*'
+        ```
+
+#### 12.2.3 **Perform actions on Azure CDN by using the Azure CDN Library for .NET**
+
+- **Setup**:
+    - Install the **Microsoft.Azure.Management.Cdn** NuGet package in your .NET project.
+    - Configure your **Azure credentials** in your application settings.
+
+- **Create CDN Profile**:
+    ```csharp
+    var cdnManagementClient = new CdnManagementClient(new DefaultAzureCredential())
+    {
+            SubscriptionId = "your_subscription_id"
+    };
+
+    var profile = await cdnManagementClient.Profiles.CreateAsync(
+            "resourceGroupName",
+            "profileName",
+            new Profile
+            {
+                    Location = "global",
+                    Sku = new Sku { Name = SkuName.StandardMicrosoft }
+            });
+    ```
+
+- **Purge Content**:
+    ```csharp
+    await cdnManagementClient.Endpoints.PurgeContentAsync(
+            "resourceGroupName",
+            "profileName",
+            "endpointName",
+            new PurgeParameters { ContentPaths = new List<string> { "/*" } });
+    ```
