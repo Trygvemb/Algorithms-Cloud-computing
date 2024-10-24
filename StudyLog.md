@@ -47,6 +47,11 @@ title: Study Log
   - I finished the Microsoft Azure Fundamentals course and I am now doing the AZ-305 Microsoft Azure Architect Design Prerequisites course. I will then do the AZ-204 course to get a better understanding of Azure development.
   - I have been focusing mainly on Azure and the cloud computing part of my studies since this is such a big subject and it takes time to get a good understanding of the different services and how they work together.
   - I'm currently deciding if I should do the AZ-204 exam to get the Microsoft Certified: Azure Developer Associate certification. But i know it will takes some time to get ready for the exam and i still need to do some more work on Algorithms and the Project as well.
+  - After I finished the AZ-204 learning plan on 23 October, I decided to look more into Azure AI. I joined an online seminar on teams with ann introduction to Azure AI and certifications.
+
+- Azure AI Courses
+  - Introduction to Azure AI and Document Intelligence [Link](https://learn.microsoft.com/en-au/collections/r47ni8gp1eqgqp?ref=collection&listId=1nx4c0zqyoodor&sharingId=6A9F03F25E12DA9E&wt.mc_id=aisc25_landingpage_wwl)
+
 
 ## November
 
