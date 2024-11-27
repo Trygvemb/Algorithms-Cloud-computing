@@ -2,16 +2,12 @@
 title: Study Log
 ---
 
-## August
-
 - Courses
   - AWS Cloud Practitioner Essentials [Link](https://www.aws.training/Details/Curriculum?id=27076)
     - Finished.
 
 - Notes
   - After finishing the AWS Cloud Practitioner Essentials course, I decided to also do the Microsoft Azure Fundamentals course to get a broader understanding of cloud computing. I will also do some Docker courses to get a better understanding of containerization.
-
-## September
 
 - Courses
   - Microsoft Azure Fundamentals: Describe cloud concepts [Link](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
@@ -20,8 +16,6 @@ title: Study Log
 - Notes
   - After finishing the Docker Get Started course, I and while studying the Microsoft Azure Fundamentals course, I realized that I wanted to do more of the Azure courses to get a better understanding of the Azure platform. I will continue with the Azure courses and then I might do some more Docker courses.
   - I decided to focus on Azure since most danish companies use Microsoft products and services.
-
-## October
 
 - Courses
   - Microsoft Azure Fundamentals: Describe Azure architecture and services [Link](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/)
@@ -51,8 +45,3 @@ title: Study Log
 
 - Azure AI Courses
   - Introduction to Azure AI and Document Intelligence [Link](https://learn.microsoft.com/en-au/collections/r47ni8gp1eqgqp?ref=collection&listId=1nx4c0zqyoodor&sharingId=6A9F03F25E12DA9E&wt.mc_id=aisc25_landingpage_wwl)
-
-
-## November
-
-## December

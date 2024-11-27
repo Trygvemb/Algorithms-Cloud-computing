@@ -48,7 +48,6 @@ title: "Study Plan for Data Structures and Algorithms"
 ### 5. **Searching**
 
 - **Materials**:
-  - Read: Binary Search in "Introduction to Algorithms" or "Data Structures and Algorithms in Python".
   - Watch: Binary Search Tutorials (Abdul Bari on YouTube).
   - Online Resources: [GeeksforGeeks Searching Algorithms.](https://www.geeksforgeeks.org/searching-algorithms)
 - **Exercises**:
