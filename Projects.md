@@ -2,9 +2,10 @@
 title : "Projects"
 ---
 
-### [Team Project - WePack.PMS](https://github.com/DMOoF23-S4-Team2/PMS-WePack)
+## Resources
 
-### [Shopify GraphQL API Testing](ShopifyGraphQL.md)
+- [Team Project - WePack.PMS](https://github.com/DMOoF23-S4-Team2/PMS-WePack)
+- [Shopify GraphQL API Testing](ShopifyGraphQL.md)
 
 ### Hosting
 
@@ -43,7 +44,7 @@ title : "Projects"
 - I had mapped the ports to use 443 HTTPS with the self signed certificate and that worked when i was running the container locally, but when i pushed it to Azure, it didn't work. Since it is not a verified certificate. Instead I went back to using 8080 HTTP and the container and then letting Azure handle the HTTPS. This worked and I can now access the application through the Azure Container App.
 
 - Link to frontend container app
-    - https://ca-wepack-web.bluestone-4e633029.swedencentral.azurecontainerapps.io/
+    - [Frontend](https://ca-wepack-web.bluestone-4e633029.swedencentral.azurecontainerapps.io/)
 
 - Link to backend container app
-    - https://ca-wepack-api.bluestone-4e633029.swedencentral.azurecontainerapps.io/
+    - [Backend](https://ca-wepack-api.bluestone-4e633029.swedencentral.azurecontainerapps.io/)
