@@ -1,11 +1,13 @@
 ---
-Title: "Algorithms"
+Title: "Algorithms and Optimization"
 ---
 
 ## Resources
 
 - [Algorithms Notes](AlgorithmsNotes.md)
 - [Study Plan for Algorithms](StudyPlanAlgorithms.md)
+- [Docker Get Started Course](https://docs.docker.com/get-started)
+- [Geek for Geeks DSA Tutorial](https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/)
 - [GitHub Project for Practicing Algorithms](https://github.com/Trygvemb/AlgorithmPractice)
 
 ### Reading List
@@ -14,11 +16,13 @@ Title: "Algorithms"
 
 ---
 
-#### Learning Objectives for Algorithms
+#### Learning Objectives for Algorithms and Optimization
 
 ##### Subject Description
 
-Algorithms are fundamental building blocks in computer science, used to solve complex problems efficiently. By learning about algorithms, one not only gains knowledge of specific techniques and data structures but also develops a general approach to problem-solving that can be applied in various situations. I have chosen this subject because it is crucial to be able to design and implement effective solutions to real-world problems, and understanding algorithms is often the key to writing faster and more efficient programs. Additionally, algorithms are a central topic in technical job interviews and are relevant for many professional development tasks.
+This subject focuses on the design, analysis, and implementation of algorithms and optimization techniques to create efficient, scalable, and maintainable systems. It builds on foundational concepts in data structures and algorithms to enhance problem-solving skills and explores optimization through practical tools like Docker and cloud computing services.
+
+The subject aims to bridge theoretical knowledge and practical application, ensuring an understanding of computational efficiency while using modern tools for performance enhancement and automation. Mastering these skills is essential for backend development, system design, and effective deployment in distributed and cloud-based environments.
 
 ##### Formulation of Learning Objectives
 
@@ -26,30 +30,35 @@ Algorithms are fundamental building blocks in computer science, used to solve co
 
 **Knowledge**
 
-- Understanding the theory behind basic and commonly used algorithms.
-- Understanding time and space complexity (Big-O notation) and how it affects the performance of algorithms.
-- Understanding data structures and their applications in algorithms.
-- Understanding the correctness and efficiency in the design of algorithms.
+- Understand the theory behind commonly used algorithms and data structures.
+- Analyze time and space complexity using Big-O notation to evaluate algorithmic efficiency.
+- Comprehend the role of optimization in enhancing system performance.
+- Understand the principles of containerization and automation using Docker.
+- Gain insights into modern cloud-based tools for resource optimization and scalability.
 
 **Skills**
 
-- Apply and implement various algorithms to solve specific problems.
-- Implement algorithms in C# and analyze their complexity.
-- Choose and apply the most appropriate data structure for a given problem.
-- Use tools to analyze and optimize the performance of algorithms.
+- Apply and implement various algorithms and data structures to solve complex problems.
+- Use Docker to containerize applications and automate deployment processes.
+- Optimize Docker images and containers for performance and efficiency.
+- Leverage cloud tools (e.g., AWS and Azure) to build scalable and cost-effective solutions.
+- Develop scripts and workflows to automate repetitive development and deployment tasks.
 
 **Competencies**
 
-- Identify, analyze, and define problems that can be solved using algorithms.
-- Evaluate and choose the most suitable algorithm to solve a given problem.
-- Learn and apply new algorithms and data structures when required by complex tasks.
+- Analyze system bottlenecks and implement algorithmic or infrastructural optimizations.
+- Identify appropriate data structures, algorithms, and tools to address specific challenges.
+- Integrate theoretical knowledge with practical tools like Docker and cloud platforms to create robust systems.
+- Stay updated with emerging technologies in optimization, containerization, and algorithm design.
 
 ###### Short-Term Learning Objectives
 
-- Read and understand the first chapter of _Introduction to Algorithms (CLRS)_ and complete all exercises.
-- Implement the algorithms introduced in the chapter in small C# applications.
-- Develop an understanding of the time and space complexity of algorithms by analyzing their performance through practice.
-- Practice identifying appropriate algorithms and data structures for simple tasks and implement them effectively.
+- Complete the entire GeeksforGeeks DSA Tutorial, focusing on foundational algorithms and data structures.
+- Solve selected coding challenges on platforms like LeetCode or HackerRank to reinforce algorithmic thinking.
+- Implement and analyze the performance of basic algorithms (e.g., sorting, searching, recursion) in C#.
+- Study and apply Docker for containerizing applications and streamlining workflows.
+- Optimize Docker images and test automated deployment pipelines in the WePack.PMS project.
+- Complete selected Azure and AWS cloud certifications to deepen understanding of optimization tools and techniques.
 
 ---
 
@@ -57,17 +66,18 @@ Algorithms are fundamental building blocks in computer science, used to solve co
 
 ##### Identification of Quality Criteria
 
-- **Clarity**: It must be clear what is expected to be achieved within each learning activity.
-- **Measurability**: Understanding and implementation of specific algorithms should be documented through code and analysis.
-- **Timeframe**: Each goal should have a clearly defined deadline for completion.
-- **Opportunity for Feedback**: Regular reviews and evaluations of progress with the possibility of adjusting learning objectives as needed.
+- **Clarity**: Objectives should clearly outline what is to be achieved, such as completing specific tutorials or implementing algorithms.
+- **Measurability**: Progress can be tracked through completed coding challenges, Docker setups, and documented optimizations.
+- **Timeframe**: Set deadlines for each milestone, such as completing tutorials or implementing optimizations in the WePack.PMS project.
+- **Opportunity for Feedback**: Regular code reviews and consultations with team members or mentors to refine approaches.
 
 ##### Application of Criteria
 
-These criteria are used as benchmarks to ensure that the learning objectives are realistic, concrete, and aimed at practical application and understanding.
+These criteria ensure that learning objectives remain actionable, measurable, and aligned with both theoretical and practical goals.
 
 ---
 
 #### Communication
 
-The short-term goals support the long-term goals by making them concrete through reading, exercises, and practical implementations. For example, the long-term goals of "Understanding the theory behind basic algorithms" and "Applying and implementing various algorithms" are translated into specific tasks such as completing exercises from the book and implementing algorithms in small programs.
+The short-term goals of completing data structure tutorials, practicing coding challenges, and applying Docker in a project directly contribute to the long-term objectives of mastering algorithms, optimization, and automation. For example, foundational knowledge in algorithms supports the optimization strategies used in cloud-based deployments and Docker workflows in the WePack.PMS project.
+

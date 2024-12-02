@@ -8,7 +8,6 @@ title : "Cloud Computing"
 - [GitHub Project for Practicing Cloud Computing](https://github.com/Trygvemb/CloudPractice)
 - [AWS Cloud Essential, Course Notes](AWS.md)
 - [Microsoft Azure Fundamentals, Course Notes](MicrosoftAzureFundamentals.md)
-- [Docker Get Started Course](https://docs.docker.com/get-started)
 - [Azure Developer CareerPath](AzureDeveloperCareerPath.md)
 - [Assignment: Basic AWS Networking and EC2 Setup with Load Balancer and Domain](Assignment.AWSNetworkingAndSetup.md)
 
@@ -36,7 +35,8 @@ Cloud Computing refers to the concept of delivering various services over the in
 - Understanding the fundamental concepts and terminology in Cloud Computing.
 - Understanding the different types of Cloud Services (IaaS, PaaS, SaaS) and their applications.
 - Understanding how cloud services can be used to create scalable applications.
-- Understanding the security aspects of cloud environments.
+- Understanding the security implications of using cloud services.
+- Understanding how to provision and manage cloud resources.
 
 **Skills**
 
@@ -44,7 +44,7 @@ Cloud Computing refers to the concept of delivering various services over the in
 - Configure and manage cloud services using Azure.
 - Design and implement scalable systems in cloud environments.
 - Implement security measures to protect data and applications in the cloud.
-- Use cloud-based tools to monitor and troubleshoot systems.
+- Implement best practices for cloud architecture and deployment.
 
 **Competencies**
 
@@ -60,6 +60,7 @@ Cloud Computing refers to the concept of delivering various services over the in
 - Read and understand AWS whitepapers on security and best practices.
 - Implement a simple application using AWS cloud services (e.g., S3, EC2, RDS).
 - Practice designing cloud architectures through hands-on exercises and mock exams.
+- Host our project WePack.PMS on Azure
 
 ---
 
